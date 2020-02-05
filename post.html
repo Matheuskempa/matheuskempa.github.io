@@ -3,12 +3,15 @@
 
 <head>
 
+
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Matheus Kempa</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">M Kempa</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -39,31 +42,31 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html">Quem sou eu ?</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+  <header class="masthead" style="background-image: url('img/post1.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Man must explore, and this is exploration at its greatest</h1>
-            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-            <span class="meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on August 24, 2019</span>
+            <h1>Web Scraping - Parte 1</h1>
+            <h2 class="subheading">Extraindo informações e tratando dados</h2>
+            <span class="meta">Postado por
+              <a href="#">Matheus Kempa,</a>
+              Quarta-Feira, 5 de Fevereiro de 2020</span>
           </div>
         </div>
       </div>
@@ -75,42 +78,250 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p align ="justify">Automatizar tarefas não é uma tarefa difícil nos dias atuais. Em grandes organizações existem ferramentas até mais robustas que envolvem a criação de "Robôs", por assim dizer, que conseguem automatizar a grande parte dos processos, como é o exemplo da <a href="https://www.uipath.com/">UiPath</a>.</p>
 
-          <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+          <p align ="justify">Web scraping entra um pouco nessa questão, pois dessa forma é possível automatizar alguns processos de extração ou coleta de informações do local desejado, para posteriormente ser feita uma análise dos dados obtidos.</p>
 
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+          <p align ="justify">Mostrarei aqui uma aplicação dessa forma de mineração de dados. O objetivo, portanto, é coletar informações dos jogos de futebol da UEFA Champions League, tratá-las e criar uma base. Essas informações serão estraídas do <a href="https://fbref.com/">Fbref</a>, lá existe conteúdo sobre jogos, jogadores, público e várias outros detalhamentos. Vamos estar programando em Python e estaremos utilizando um módulo chamado Beautiful Soup.</p>
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+          <h2 class="section-heading">Entendendo o Problema</h2>
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+          <p align ="justify">Pretendo possuir uma base dos jogos e jogadores da Champions League e que a alimentação da base seja viável a cada rodada. Para isso, terei que fazer a raspagem de duas páginas, uma página que leva a outra: <a href="https://fbref.com/en/matches/7f6a5ede/Lyon-Zenit-September-17-2019-Champions-League">Página 1</a> e <a href="https://fbref.com/en/comps/8/schedule/Champions-League-Fixtures">Página 2</a></p>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p align ="justify">Como o projeto é, de certa forma, moroso, vou dividir em dois posts onde vou explicar com mais detalhes cada parte da extração e tratativa dos dados. Nesse post farei o web scraping da primeira página que contém os detalhes de cada partida, no segundo post fari da segunda página que possui o link que leva ao detalhe de cada partida e o resto do processo de mineração. Veja nas foto abaixo as informações de cada página:</p>
+          
+          <a href="#">
+            <img class="img-fluid" src="img/pg1.PNG" alt="">
+          </a>
+          <span class="caption text-muted">Página 1: Detalhamento por jogador</span>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-          <h2 class="section-heading">Reaching for the Stars</h2>
-
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
 
           <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
+            <img class="img-fluid" src="img/obj.PNG" alt="">
           </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+          <span class="caption text-muted">Página 2: A página que possui o link para a outra página</span>
 
-          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+          <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote> -->
 
-          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+          <p>Comecemos então...</p>
 
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+          <h2 class="section-heading">Mão na massa!</h2>
+
+          <style type="text/css">
+
+
+    .highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+            div.input_area {
+              border: 1px solid #cfcfcf;
+              border-radius: 2px;
+              background: #f7f7f7;
+              line-height: 1.21429em;
+            }
+            </style>
+
+          <blockquote class="blockquote"><p><a href="WebScraping.html">Nesse link</a> deixarei o código completo a disposição. A parte referente a esse post é somente a Etapa 1, especificada lá.</p></blockquote>
+          <p align ="justify">Nessa etapa vou selecionar o local aonde quero capturar os dados, tratar algumas informações adicionais e salvar todas as planilhas em excel. Apriori utilizarei 2 bibliotecas.</p> 
+          
+ 
+          <div class="input_area">
+
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Importo as bibliotecas</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="c1">#faço a request</span>
+<span class="n">pg</span> <span class="o">=</span> <span class="s1">&#39;https://fbref.com/&#39;</span>
+<span class="n">url_pg</span> <span class="o">=</span> <span class="n">pg</span><span class="o">+</span><span class="s1">&#39;en/matches/d1dd1dea/Bayer-Leverkusen-Lokomotiv-Moscow-September-18-2019-UEFA-Champions-League&#39;</span>
+<span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url_pg</span><span class="p">)</span>
+<span class="c1">#pegando a base do site</span>
+  
+  <span class="n">content</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">content</span>
+  <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>  
+          </div> </div>
+ 
+          <p align ="justify">A blioteca Requests vai me proporcionar carregar a página, enquanto a Beautiful Soup vai me ajudar a entrar na parte da página que quero fazer a extração. </p>
+
+          <p align ="justify">Agora vou dar uma olhada lá na <a href="https://fbref.com/en/matches/7f6a5ede/Lyon-Zenit-September-17-2019-Champions-League">página 1</a> qual informação eu pretendo utilizar:</p>
+
+
+          <a href="##">
+            <img class="img-fluid" src="img/inf1.PNG" alt="">
+          </a>
+          <span class="caption text-muted">Página 1: Aonde está a informação?</span>
+
+
+          <p align ="justify">Utilizarei outra biblioteca aqui, Pandas. Essa biblioteca me auxiliar nas tratativas que irão ter que ser feitas.</p> 
+          <p align ="justify">Agora a extração e a tratativa desse conteúdo irá começar.</p>
+
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Importo as bibliotecas</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">table_geral</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="n">class_</span> <span class="o">=</span> <span class="s2">&quot;table_outer_container&quot;</span><span class="p">)</span>
+<span class="n">table_time_1</span> <span class="o">=</span> <span class="n">table_geral</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">table_time_2</span> <span class="o">=</span> <span class="n">table_geral</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">table_time_3</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;venuetime&#39;</span><span class="p">)</span>
+<span class="n">table_torcida</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span> <span class="o">=</span> <span class="s2">&quot;scorebox_meta&quot;</span><span class="p">)</span>
+<span class="n">oi_torcida</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">table_torcida</span><span class="p">)</span>
+
+<span class="c1">#Tratando as informações</span>
+
+<span class="n">toby</span> <span class="o">=</span> <span class="n">oi_torcida</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&lt;small&gt;&#39;</span><span class="p">)</span>
+<span class="n">torcida</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">toby</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">torcida</span> <span class="o">=</span> <span class="n">torcida</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&lt;/small&gt;&#39;</span><span class="p">)</span>
+<span class="n">torcida</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">torcida</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">estadio</span> <span class="o">=</span> <span class="n">toby</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">estadio</span> <span class="o">=</span> <span class="n">estadio</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&lt;/small&gt;&#39;</span><span class="p">)</span>
+<span class="n">estadio</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">estadio</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>    
+
+<span class="c1">#conseguindo a data do jogo</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">table_time_3</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;data-venue-date&#39;</span><span class="p">)</span>        
+
+<span class="c1">#tratando o nome da planilha</span>
+<span class="n">nome</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+<span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;_&quot;</span><span class="p">)</span>
+<span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;title&gt;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">nome_final</span> <span class="o">=</span> <span class="n">nome</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;Report&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1">#retratando o nome final</span>
+
+<span class="n">nome_final</span> <span class="o">=</span> <span class="n">nome_final</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;_Match&quot;</span><span class="p">)</span>
+<span class="n">nome_final</span> <span class="o">=</span> <span class="n">nome_final</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>    
+
+<span class="c1">#transformando a base do site em string e fazendo algumas tratativas</span>
+<span class="n">table_str_1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">table_time_1</span><span class="p">)</span>
+<span class="n">table_str_2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">table_time_2</span><span class="p">)</span>
+<span class="n">df_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">table_str_1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">df_2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">table_str_2</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">time</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">nome_final</span><span class="p">)</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; vs &quot;</span><span class="p">)</span>
+<span class="n">time_1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">time_2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1">#transformando em dataframe e adiocionando colunas</span>
+<span class="n">df_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_1</span><span class="p">)</span>
+<span class="n">df_1</span><span class="p">[</span><span class="s1">&#39;Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time_1</span><span class="p">)</span>
+<span class="n">df_1</span><span class="p">[</span><span class="s1">&#39;Time_Adversario&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time_2</span><span class="p">)</span>
+<span class="n">df_1</span><span class="p">[</span><span class="s1">&#39;Confronto&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">nome_final</span><span class="p">)</span>
+<span class="n">df_1</span><span class="p">[</span><span class="s1">&#39;Data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df_1</span><span class="p">[</span><span class="s1">&#39;Estadio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">estadio</span><span class="p">)</span>
+<span class="n">df_1</span><span class="p">[</span><span class="s1">&#39;Torcida&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">torcida</span><span class="p">)</span>    
+
+
+<span class="n">df_2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_2</span><span class="p">)</span>
+<span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time_2</span><span class="p">)</span>
+<span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;Time_Adversario&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time_1</span><span class="p">)</span>
+<span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;Confronto&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">nome_final</span><span class="p">)</span>
+<span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;Data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;Estadio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">estadio</span><span class="p">)</span>
+<span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;Torcida&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">torcida</span><span class="p">)</span>
+
+
+
+<span class="n">df_3</span> <span class="o">=</span> <span class="n">df_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_2</span><span class="p">)</span>
+
+</div></div>
+
+          <p align ="justify">Nessa parte do código fiz diversos tratamentos nas extrações. Vamos aos detalhes: </p>
+          <li>1. Table Geral = Procuro as tabelas da página que queríamos.</li>
+          <li>2. Table_time_1 = Consulto as tabelas exatas e as informações necessárias</li>
+          <li>3. Tratativa = Tiro as informações descenessárias e trato aquelas informações que possuo</li>
+          <li>4. Dataframe = Transformo as informações que tenho em dataframes</li>
+
+          <p align ="justify">Feito isso só o que falta agora é colocar isso em uma planilha. Utilizarei outra blioteca (xlsxwriter) pra me ajudar nessa tarefa:</p>
+
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Importo as bibliotecas</span>
+<span class="kn">import</span> <span class="nn">xlsxwriter</span>
+
+<span class="c1">#escrevendo em excelfile</span>
+<span class="n">writer</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="n">nome_final</span><span class="o">+</span><span class="s1">&#39;.xlsx&#39;</span><span class="p">)</span>
+<span class="n">df_3</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span><span class="s2">&quot;Estatisticas&quot;</span><span class="p">)</span>
+<span class="n">writer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+
+</div></div>
+
+          <p align ="justify">Temos então nossa base do jogo com um alto nível de detalhes por jogador. No futuro conseguiremos "brincar" bastante e de diversas formas com essas informações.</p>
+          
+          <a href="###">
+            <img class="img-fluid" src="img/result.PNG" alt="">
+          </a>
+          <span class="caption text-muted">Planilha final</span>
+
+          <p align ="justify">No próximo post vamos estar explorando mais desse tema!</p>
+          
         </div>
       </div>
     </div>
@@ -126,18 +337,18 @@
           <ul class="list-inline text-center">
             <li class="list-inline-item">
               <a href="#">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
+                </span> -->
               </a>
             </li>
             <li class="list-inline-item">
               <a href="#">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
+                </span> -->
               </a>
             </li>
             <li class="list-inline-item">
@@ -149,7 +360,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+          <!-- <p class="copyright text-muted">Copyright &copy; Your Website 2019</p> -->
         </div>
       </div>
     </div>
