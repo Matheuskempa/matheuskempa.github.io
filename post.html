@@ -205,8 +205,8 @@
 <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url_pg</span><span class="p">)</span>
 <span class="c1">#pegando a base do site</span>
   
-  <span class="n">content</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">content</span>
-  <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>  
+<span class="n">content</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">content</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>  
           </div> </div>
  
           <p align ="justify">A biblioteca Requests vai me proporcionar o carregamento da página, enquanto a Beautiful Soup vai me ajudar a entrar na parte da página que quero fazer a extração. </p>
