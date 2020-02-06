@@ -78,17 +78,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p align ="justify">Automatizar tarefas não é uma tarefa difícil nos dias atuais. Em grandes organizações existem ferramentas até mais robustas que envolvem a criação de "Robôs", por assim dizer, que conseguem automatizar a grande parte dos processos, como é o exemplo da <a href="https://www.uipath.com/">UiPath</a>.</p>
+          <p align ="justify">Automatizar tarefas não é um trabalho complexo nos dias atuais. Em grandes organizações existem ferramentas até mais robustas que envolvem a criação de "Robôs", por assim dizer, que conseguem automatizar a grande parte dos processos, como é o exemplo da <a href="https://www.uipath.com/">UiPath</a>.</p>
 
-          <p align ="justify">Web scraping entra um pouco nessa questão, pois dessa forma é possível automatizar alguns processos de extração ou coleta de informações do local desejado, para posteriormente ser feita uma análise dos dados obtidos.</p>
+          <p align ="justify">Web scraping aborda essa questão, pois dessa forma é possível automatizar alguns processos de extração ou coleta de informações do local desejado, para posteriormente ser feita uma análise dos dados obtidos.</p>
 
-          <p align ="justify">Mostrarei aqui uma aplicação dessa forma de mineração de dados. O objetivo, portanto, é coletar informações dos jogos de futebol da UEFA Champions League, tratá-las e criar uma base. Essas informações serão estraídas do <a href="https://fbref.com/">Fbref</a>, lá existe conteúdo sobre jogos, jogadores, público e várias outros detalhamentos. Vamos estar programando em Python e estaremos utilizando um módulo chamado Beautiful Soup.</p>
+          <p align ="justify">Mostrarei aqui uma aplicação dessa forma de mineração de dados. O objetivo, portanto, é coletar informações dos jogos de futebol da UEFA Champions League, tratá-las e criar uma base. Essas informações serão extraídas do <a href="https://fbref.com/">Fbref</a>. Neste existe conteúdo sobre jogos, jogadores, público e várias outros detalhamentos. Vou estar programando em Python.</p>
 
           <h2 class="section-heading">Entendendo o Problema</h2>
 
           <p align ="justify">Pretendo possuir uma base dos jogos e jogadores da Champions League e que a alimentação da base seja viável a cada rodada. Para isso, terei que fazer a raspagem de duas páginas, uma página que leva a outra: <a href="https://fbref.com/en/matches/7f6a5ede/Lyon-Zenit-September-17-2019-Champions-League">Página 1</a> e <a href="https://fbref.com/en/comps/8/schedule/Champions-League-Fixtures">Página 2</a></p>
 
-          <p align ="justify">Como o projeto é, de certa forma, moroso, vou dividir em dois posts onde vou explicar com mais detalhes cada parte da extração e tratativa dos dados. Nesse post farei o web scraping da primeira página que contém os detalhes de cada partida, no segundo post fari da segunda página que possui o link que leva ao detalhe de cada partida e o resto do processo de mineração. Veja nas foto abaixo as informações de cada página:</p>
+          <p align ="justify">Como o projeto é, de certa forma, moroso, vou dividir em dois posts onde vou explicar com mais detalhes cada parte da extração e tratativa dos dados. Nesse post farei o web scraping da primeira página que contém os detalhes de cada partida, no segundo post farei da segunda página, que possui o link que leva ao detalhamento de cada partida e o resto do processo de mineração. Veja nas imagens abaixo as informações que cada página contém:</p>
           
           <a href="#">
             <img class="img-fluid" src="img/pg1.PNG" alt="">
@@ -189,8 +189,8 @@
             }
             </style>
 
-          <blockquote class="blockquote"><p><a href="WebScraping.html">Nesse link</a> deixarei o código completo a disposição. A parte referente a esse post é somente a Etapa 1, especificada lá.</p></blockquote>
-          <p align ="justify">Nessa etapa vou selecionar o local aonde quero capturar os dados, tratar algumas informações adicionais e salvar todas as planilhas em excel. Apriori utilizarei 2 bibliotecas.</p> 
+          <blockquote class="blockquote"><p><a href="WebScraping.html">Nesse link</a> deixarei o código completo a disposição. A parte referente a esse post é somente a Etapa 1.</p></blockquote>
+          <p align ="justify">Nessa etapa vou selecionar o local aonde quero capturar os dados, tratar algumas informações adicionais e salvar todas as planilhas em excel. A priori, utilizarei 2 bibliotecas.</p> 
           
  
           <div class="input_area">
@@ -209,18 +209,18 @@
   <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>  
           </div> </div>
  
-          <p align ="justify">A blioteca Requests vai me proporcionar carregar a página, enquanto a Beautiful Soup vai me ajudar a entrar na parte da página que quero fazer a extração. </p>
+          <p align ="justify">A biblioteca Requests vai me proporcionar o carregamento da página, enquanto a Beautiful Soup vai me ajudar a entrar na parte da página que quero fazer a extração. </p>
 
-          <p align ="justify">Agora vou dar uma olhada lá na <a href="https://fbref.com/en/matches/7f6a5ede/Lyon-Zenit-September-17-2019-Champions-League">página 1</a> qual informação eu pretendo utilizar:</p>
-
-
-          <a href="##">
-            <img class="img-fluid" src="img/inf1.png" alt="">
-          </a>
-          <span class="caption text-muted">Página 1: Aonde está a informação?</span>
+          <p align ="justify">Agora volto na <a href="https://fbref.com/en/matches/7f6a5ede/Lyon-Zenit-September-17-2019-Champions-League">página 1</a> identifico qual informação eu pretendo utilizar:</p>
 
 
-          <p align ="justify">Utilizarei outra biblioteca aqui, Pandas. Essa biblioteca me auxiliar nas tratativas que irão ter que ser feitas.</p> 
+        <a href="##">
+          <img class="img-fluid" src="img/inf1.png" alt="">
+        </a>
+        <span class="caption text-muted">Página 1: Aonde está a informação?</span>
+
+
+          <p align ="justify">Utilizarei aqui outra biblioteca, chamada Pandas. Essa biblioteca auxiliará nas tratativas que serão feitas.</p> 
           <p align ="justify">Agora a extração e a tratativa desse conteúdo irá começar.</p>
 
 <div class="input_area">
@@ -295,12 +295,12 @@
 </div></div>
 
           <p align ="justify">Nessa parte do código fiz diversos tratamentos nas extrações. Vamos aos detalhes: </p>
-          <li>1. Table Geral = Procuro as tabelas da página que queríamos.</li>
-          <li>2. Table_time_1 = Consulto as tabelas exatas e as informações necessárias</li>
-          <li>3. Tratativa = Tiro as informações descenessárias e trato aquelas informações que possuo</li>
-          <li>4. Dataframe = Transformo as informações que tenho em dataframes</li>
+          <li>1. Table Geral = Procuro as tabelas da página desejadas;</li>
+          <li>2. Table_time_1 = Consulto as tabelas exatas e as informações necessárias;</li>
+          <li align ="justify">3. Tratativa = Tiro as informações descenessárias e trato aquelas informações que possuo;</li>
+          <li>4. Dataframe = Transformo as informações que tenho em dataframes;</li>
 
-          <p align ="justify">Feito isso só o que falta agora é colocar isso em uma planilha. Utilizarei outra blioteca (xlsxwriter) pra me ajudar nessa tarefa:</p>
+          <p align ="justify">Concluída esta etapa, resta agora colocar em uma planilha. Utilizarei outra blioteca (xlsxwriter) pra me ajudar nessa tarefa:</p>
 
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Importo as bibliotecas</span>
@@ -313,14 +313,14 @@
 
 </div></div>
 
-          <p align ="justify">Temos então nossa base do jogo com um alto nível de detalhes por jogador. No futuro conseguiremos "brincar" bastante e de diversas formas com essas informações.</p>
+          <p align ="justify">Temos então nossa base do jogo com um alto nível de informações por jogador. No futuro conseguiremos "brincar" bastante e de diversas formas com essas informações.</p>
           
           <a href="###">
             <img class="img-fluid" src="img/result.PNG" alt="">
           </a>
           <span class="caption text-muted">Planilha final</span>
 
-          <p align ="justify">No próximo post vamos estar explorando mais desse tema!</p>
+          <p align ="justify">No próximo post estarei explorando mais deste tema!</p>
           
         </div>
       </div>
