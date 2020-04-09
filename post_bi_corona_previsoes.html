@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Matheus Kempa</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">M Kempa</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Quem sou eu ?</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post1.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>COVID-19: Previsões e Microsoft Power Bi</h1>
+            <h2 class="subheading">Regressão Linear Simples e Painéis Dinâmicos</h2>
+            <span class="meta">Postado por
+              <a href="#">Matheus Kempa,</a>
+              Quarta-Feira, 09 de Março de 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <p align ="justify">Esse é o segundo post sobre Coronavírus ou COVID-19.</p>
+
+          <p align ="justify">Alerto que não vou discutir quaiquer aspectos sobre o COVID-19, até porque não tenho capacidade para tal feito. Vou me ater em mostrar o pode ser feito com informações, desde previsões e modelos, até gráficos dinâmicos e painéis que possam orientar decisões.</a></p>
+
+          <h2 class="section-heading">Introdução</h2>
+
+          <p align ="justify">Nesse post iremos ver uma aplicação com diversas tarefas executadas como  modelos de regressão, criação de um robô para clique em páginas web - Isso é um pouco mais complexo que o conceito de raspagem e criação de Dashboards com Power BI.</a></p>
+
+          <p align ="justify">Não vou explorar de forma tão contundente cada detalhe, mas vou explicar o que é necessário ser feito e vou disponilizar o código para averiguação.</p>
+          
+          
+          <h2 class="section-heading">Etapa 1 - Tratamento da Bases</h2>
+
+          <p align ="justify">A base que irei utilizar é do site <a href="https://ourworldindata.org/coronavirus-source-data">Our World in Data</a>, de lá iremos achar a fonte de nossos dados. Como</a></a></p>
+
+          <p align ="justify">As bases antes de serem treinadas e usadas para previão. </a></p>
+
+          <p align ="justify">Para efetuarmos a previsão, precisamos primeiro de alguns países que podemos pegar para serem referencial. Depois de escolhidos temos que tratar a base para que mostrar que a relação de dias de Pandemia no País e sua evolução ao longo do tempo.</p>
+
+          <p align ="justify">Temos então que preparar essa base para prevermo o número de infectados e o número óbitos e por isso vocês poderão ver no código 4 partes dentro da função definida. Isso é devido às 4 bases que temos que preparar a base do Brasil (INFECTADOS E ÓBITOS) e do outro país que será referência.</p>
+
+          <h2 class="section-heading">Etapa 2 - Regressão Linear</h2>
+
+          <p align ="justify">Nas previsões apresentadas abaixo foi utilizado a Regressão Linear Simples como modelo de determinação de resultados. Onde tentei mostrar a relação entre a variável dependente e as variáveis independentes. O coeficiente de correlação linear nos evidencia o grau de relacionamento das variáveis. Nesse post a ideia era utilizar de dados de outros países que tenham mais dias com a epidemia para prever a tendência aqui no Brasil.</a></p>
+
+          <p align ="justify">Irei fazer posteriormente outro post explicando esse modelo, seu funcionamento, assim como sua seus resultados. Nesse post irei mostrar um pouco do trabalho que aqui foi feito</p>
+
+          <h2 class="section-heading">Robô</h2>
+
+          <p align ="justify">Essa foi uma parte nova pra mim, pois não havia mexido com essa biblioteca antes. Selenium é o nome da biblioteca. Nosso objetivo aqui era pegar os dados do site oficial do <a href="https://covid.saude.gov.br/">Ministério da Saúde</a>.</a></p>
+
+          <p align ="justify">Mas o grande problema aqui é não havia um link para eu fazer o webscrapping da página, só o feito do clique efetuaria o Download da planilha com os dados. </p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/covid_min.PNG" alt="">
+          </a>
+          <span class="caption text-muted">Reparem que o link que tem ali nos envia para a ícone do arquivo e não para o seu Download</span>
+
+          <p align ="justify">Por isso tive que criar um robô que ia até o botão e clicava nele e depois fazia os diversos tratamentos na base para que pudéssemos utilizá-la na criação dos DashBoards com Power BI.</p>
+
+          <h2 class="section-heading">Microsoft Power Bi</h2>
+
+          <p align ="justify">Não vou conseguir mostrar como fazer passo a passo aqui o painel, mas abaixo temos o resultado das previsões e dos painéis gerados com a base disponibilizada pelo governo.</p>
+          <left>        
+            <iframe width="730" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiOTA4ODMzMWMtNDFkYy00ZjE1LWEwMjgtYWEzYmYzNTQyMTNjIiwidCI6IjU5MjhiNGY1LTM5N2QtNGI4Yi04ZjI4LTk1ZjJmY2M4ZDcyZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </left>
+                      <p align ="justify">Alerto que nas páginas 1 e 2 os dados são da primeira fonte utilizada, e a página 3 foram utilizados os dados do Ministério Saúde e por isso podem não aprensentar a mesma informação, devido a periodicidade da informação. O código final está disponível aqui: <a href="Code_2.html">Código Completo</a>.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <!-- <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span> -->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <!-- <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span> -->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <!-- <p class="copyright text-muted">Copyright &copy; Your Website 2019</p> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
