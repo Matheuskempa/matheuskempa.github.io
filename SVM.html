@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Matheus Kempa</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">M Kempa</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modelos.html">Modelos - ML</a>
+          <!-- </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projetos.html">Mues Projetos</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Quem sou eu ?</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contato</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/svm_model/SVM.jpeg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Support Vector Machines</h1>
+            <!-- <span class="subheading">Um administrador com fome</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 class="section-heading">Support Vector Machine</h2>
+          <p align="justify">O SVM é um modelo de aprendizado supervisionado, que classifica duas classes em +1 ou -1, visando sempre aumentar a distância entre os dois pontos, ou seja, o SVM maximiza a margem entre duas variáveis, separando assim as mesmas, representado pela figura abaixo:</p>
+          <center>
+          <a href="#">
+          <img align="center" class="img-fluid" src="img/svm_model/SOMAM.PNG" alt="">
+          </center>
+          </a>
+          <span align="justify" class="caption text-muted"> Soman, Loganathan e Ajay (2009)</span>
+
+          
+          <p align="justify">A formulação do problema de separação linear no mais simples caso se dá da seguinte forma:</p>
+          <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/f(x)%20%3D%20sinal(%24w%5E%7BT%7D%24x-y)" alt="f(x) = sinal($w^{T}$x-y)" /></p>
+          <p align="justify">Onde:</p>
+          <ul>
+          <li>
+          <p><img src="https://tex.s2cms.ru/svg/x" alt="x" /> é um vetor de variáveis explicativas de dimensão p x 1;</p>
+          </li>
+          <li>
+          <p><img src="https://tex.s2cms.ru/svg/w" alt="w" /> é um vetor de parâmetros, cuja dimensão é p x 1;</p>
+          </li>
+          <li>
+          <p><img src="https://tex.s2cms.ru/svg/y" alt="y" /> é o termo viés (intercepto).</p>
+          </li>
+          </ul>
+          <p align="justify">A formulação do problema tem início na construção de uma matriz A, cuja dimensão é n x p. Nessa matriz cada coluna é uma característica de cada linha, que representa cada elemento da população.</p>
+          <p align="justify">Dado o conjunto de dados:</p>
+          <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cbegin%7Bpmatrix%7D%0Ae%20%26%20x_%7B1%7D%20%26%20x_%7B2%7D%20%26%20y_%7Bi%7D%20%5C%5C%0A%20%20%20%201%20%20%20%20%20%20%20%26%202%20%26%202%20%26%20%2B1%20%5C%5C%0A%20%20%20%202%20%20%20%20%20%20%20%26%203%20%26%201%20%26%20%2B1%20%5C%5C%0A%20%20%20%203%20%20%20%20%20%20%20%26%205%20%26%202%20%26%20-1%20%5C%5C%0A%20%20%20%204%20%20%20%20%20%20%20%26%204%20%26%203%20%26%20-1%20%5C%5C%0A%5Cend%7Bpmatrix%7D%2C" alt="\begin{pmatrix}
+          e &amp; x_{1} &amp; x_{2} &amp; y_{i} \\
+              1       &amp; 2 &amp; 2 &amp; +1 \\
+              2       &amp; 3 &amp; 1 &amp; +1 \\
+              3       &amp; 5 &amp; 2 &amp; -1 \\
+              4       &amp; 4 &amp; 3 &amp; -1 \\
+          \end{pmatrix}," /></p>
+          <p>Onde <img src="https://tex.s2cms.ru/svg/x_%7B1%7D" alt="x_{1}" /> e <img src="https://tex.s2cms.ru/svg/x_%7B2%7D" alt="x_{2}" /> são as variáveis, e são os elementos do conjunto e <img src="https://tex.s2cms.ru/svg/y_%7Bi%7D" alt="y_{i}" /> a suas respectivas classes.</p>
+          <p align="justify">O SVM têm como objetivo encontrar o hiperplano que maximiza a margem entre as duas variáveis, da seguinte forma <img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + <img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y = 0, dado que os outras classes estão na forma <img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + <img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y <img src="https://tex.s2cms.ru/svg/%5Cleq%20" alt="\leq " /> -1 e <img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + <img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> +1.</p>
+          <p align="justify">Com isso as restrições podem ser escritas da seguinte forma:</p>
+          <p>(+1) x (1<img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + 2<img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> +1</p>
+          <p>(+1) x (3<img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + 1<img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> +1</p>
+          <p>(-1) x (5<img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + 2<img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> +1</p>
+          <p>(-1) x (4<img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + 3<img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> +1</p>
+          <p align="justify">A forma matricial equivale a:</p>
+          <p align="justify">D (Aw - y1) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> 1</p>
+          <p align="justify">Onde:</p>
+          <p align="center"><img src="https://tex.s2cms.ru/svg/%0AA%20%3D%5Cbegin%7Bbmatrix%7D%0A%20%20%20%201%20%26%202%20%5C%5C%0A%20%20%20%203%20%26%201%20%5C%5C%0A%20%20%20%205%20%26%202%20%5C%5C%0A%20%20%20%204%20%26%203%20%5C%5C%0A%5Cend%7Bbmatrix%7D%20%20%0A" alt="
+          A =\begin{bmatrix}
+              1 &amp; 2 \\
+              3 &amp; 1 \\
+              5 &amp; 2 \\
+              4 &amp; 3 \\
+          \end{bmatrix}  
+          " />
+          <img src="https://tex.s2cms.ru/svg/%0A%3D%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20x_%7B1%7D%5E%7BT%7D%5C%5C%0A%20%20%20%20x_%7B2%7D%5E%7BT%7D%5C%5C%0A%20%20%20%20x_%7B3%7D%5E%7BT%7D%5C%5C%0A%20%20%20%20x_%7B4%7D%5E%7BT%7D%20%5C%5C%0A%5Cend%7Bbmatrix%7D%20%20%0A" alt="
+          =\begin{bmatrix}
+              x_{1}^{T}\\
+              x_{2}^{T}\\
+              x_{3}^{T}\\
+              x_{4}^{T} \\
+          \end{bmatrix}  
+          " />
+          ; D =
+          <img src="https://tex.s2cms.ru/svg/%0A%5Cbegin%7Bbmatrix%7D%0A%20%20%20%201%20%26%200%20%26%200%20%26%200%20%5C%5C%0A%20%20%20%200%20%26%201%20%26%200%20%26%200%20%5C%5C%0A%20%20%20%200%20%26%200%20%26%20-1%20%26%200%20%5C%5C%0A%20%20%20%200%20%26%200%20%26%200%20%26%20-1%20%5C%5C%0A%20%20%20%5Cend%7Bbmatrix%7D%20%20%0A" alt="
+          \begin{bmatrix}
+              1 &amp; 0 &amp; 0 &amp; 0 \\
+              0 &amp; 1 &amp; 0 &amp; 0 \\
+              0 &amp; 0 &amp; -1 &amp; 0 \\
+              0 &amp; 0 &amp; 0 &amp; -1 \\
+            \end{bmatrix}  
+          " /></p>
+          <p align="justify">O objetivo então nesse caso é encontrar justamente o w e o y que vão maximizar a distância entre os dois conjuntos de dados. Nesse caso representado por  <img src="https://tex.s2cms.ru/svg/w_%7B1%7D" alt="w_{1}" /> + <img src="https://tex.s2cms.ru/svg/w_%7B2%7D" alt="w_{2}" /> - y = 0, onde a distância entre os dois conjuntos é:</p>
+
+          
+          <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/x%3D%5Cfrac%7B2%7D%7B%5Csqrt%7Bw_1%5E2%2Bw_2%5E2%7D%7D" alt="x=\frac{2}{\sqrt{w_1^2+w_2^2}}" /></p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/svm_model/opa.jpg" alt="">
+          </a>
+          <span class="caption text-muted">Adaptado de Malik (2018)</span>
+
+
+          <p align="justify">De forma que maximizar <img src="https://tex.s2cms.ru/svg/x%3D%5Cfrac%7B2%7D%7B%5Csqrt%7Bw_1%5E2%2Bw_2%5E2%7D%7D" alt="x=\frac{2}{\sqrt{w_1^2+w_2^2}}" /> significa também minimizar <img src="https://tex.s2cms.ru/svg/x%3D%5Cfrac%7B1%7D%7B2%7Dw%5ETw" alt="x=\frac{1}{2}w^Tw" />, ou seja, para o problema de otimização pode ser escrito tanto de uma forma quanto de outra. Sendo assim:</p>
+          <p align="center">Minimizar: <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B1%7D%7B2%7Dw%5ETw" alt="\frac{1}{2}w^Tw" /></p>
+          <p align="center">SA: D (Aw - y1) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> 1</p>
+          <p align="center">Tal que <img src="https://tex.s2cms.ru/svg/%5Ctextbf%7Bw%7D" alt="\textbf{w}" /> <img src="https://tex.s2cms.ru/svg/%5Cin" alt="\in" /> <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bp%7D" alt="\mathbb{R}^{p}" />, <img src="https://tex.s2cms.ru/svg/%5Ctextbf%7By%7D" alt="\textbf{y}" /> <img src="https://tex.s2cms.ru/svg/%5Cin" alt="\in" /> <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D" alt="\mathbb{R}" /></p>
+          <p align="justify">Para resolver esse problema de otimização coloca-se na forma Dual de Wolfe (WOLFE, 1961):</p>
+          <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/Max_%7B%5Clambda%20%5Cgeq%200%7D%24%20%5B%24Min_%7Bw%2Cy%7D%24%20%24L(w%2Cy%2C%5Clambda)%24%5D" alt="Max_{\lambda \geq 0}$ [$Min_{w,y}$ $L(w,y,\lambda)$]" /></p>
+          <p align="justify">Depois de encontrarmos w e y que minimizam <img src="https://tex.s2cms.ru/svg/L(w%2Cy%20%5Clambda)" alt="L(w,y \lambda)" />, substituímos na função lagrangiana para maximiza-lá em função de <img src="https://tex.s2cms.ru/svg/%5Clambda" alt="\lambda" />. Substituímos os resultado na função lagrangiana e assim chegamos ao problema Dual, para então colocar o problema em sua forma matricial.</p>
+          
+          <h2 class="">SVM - Não linearidade</h2>
+          <p align="justify">Porém geralmente a separação não é tão simples e na prática os problemas são mais complexos, evidenciando assim limitações nos modelos lineares.
+          Por isso foram criados métodos baseados em kernels para problemas altamente complexos (VAPNIK, 1998), cujos dados não eram linearmente separáveis.</p>
+          <p align="justify">Com isso esses modelos em que as observações em <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bp%7D" alt="\mathbb{R}^{p}" /> não conseguem ser separadas por meio de uma função linear, acontece uma transformação <img src="https://tex.s2cms.ru/svg/%5Cvarphi" alt="\varphi" />(x) <img src="https://tex.s2cms.ru/svg/%5Cin" alt="\in" />  <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bq%7D" alt="\mathbb{R}^{q}" />, onde as variáveis que antes estavam em dimensão <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E2" alt="\mathbb{R}^2" /> agora são transformadas para <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E3" alt="\mathbb{R}^3" /> e agora podem se tornar separáveis, essa nova dimensão é chamada de espaço característica.</p>
+          <p align="justify">E o responsável por fazer essa transposição para o espaço característica é justamente o kernel. Ou seja:</p>
+          <center>
+          <a href="#">
+            <img class="img-fluid" src="img/svm_model/nlinear.PNG" alt=""> =>
+            <img class="img-fluid" src="img/svm_model/caracteristica.png" alt="">
+          </a>
+          <span class="caption text-muted">Soman, Loganathan e Ajay (2009)</span>
+          </center>
+          <p align="justify">Onde antes era x, agora com a transformação se torna <img src="https://tex.s2cms.ru/svg/%5Cvarphi" alt="\varphi" />(x) e onde era <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bp%7D" alt="\mathbb{R}^{p}" />, agora se torna <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bq%7D" alt="\mathbb{R}^{q}" />, onde q necessariamente é maior que p. Com isso o problema se separação agora se torna:</p>
+          <p align="center">Minimizar: <img src="https://tex.s2cms.ru/svg/%5Cfrac%7B1%7D%7B2%7Dw%5ETw" alt="\frac{1}{2}w^Tw" /></p>
+          <p align="center">SA: D (<img src="https://tex.s2cms.ru/svg/%5Cphi" alt="\phi" />w - y1) <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> 1</p>
+          <p align="center">Tal que <img src="https://tex.s2cms.ru/svg/%5Ctextbf%7Bw%7D" alt="\textbf{w}" /> <img src="https://tex.s2cms.ru/svg/%5Cin" alt="\in" /> <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bq%7D" alt="\mathbb{R}^{q}" />, \textbf{y} <img src="https://tex.s2cms.ru/svg/%5Cin" alt="\in" /> <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D" alt="\mathbb{R}" /></p>
+          <p align="justify">A separação dos dados ocorrerá sobre uma função linear para o espaço de característica. Ou seja para um f(x) = sinal(<img src="https://tex.s2cms.ru/svg/w%5E%7BT%7D" alt="w^{T}" /> <img src="https://tex.s2cms.ru/svg/%5Cphi" alt="\phi" />x-y) = +1 quando (<img src="https://tex.s2cms.ru/svg/w%5E%7BT%7D" alt="w^{T}" /> <img src="https://tex.s2cms.ru/svg/%5Cphi" alt="\phi" />x-y <img src="https://tex.s2cms.ru/svg/%5Cgeq%20" alt="\geq " /> 0), ou f(x) = sinal(<img src="https://tex.s2cms.ru/svg/w%5E%7BT%7D" alt="w^{T}" /> <img src="https://tex.s2cms.ru/svg/%5Cphi" alt="\phi" />x-y) = -1 quando (<img src="https://tex.s2cms.ru/svg/w%5E%7BT%7D" alt="w^{T}" /> <img src="https://tex.s2cms.ru/svg/%5Cphi" alt="\phi" />x-y <img src="https://tex.s2cms.ru/svg/%5Cleq%20" alt="\leq " /> 0) , onde w,<img src="https://tex.s2cms.ru/svg/%5Cphi" alt="\phi" />(x) <img src="https://tex.s2cms.ru/svg/%5Cin" alt="\in" /> <img src="https://tex.s2cms.ru/svg/%5Cmathbb%7BR%7D%5E%7Bq%7D" alt="\mathbb{R}^{q}" />.</p>
+          <h2 class="">Kernels</h2>
+          <p align="justify">Nesta respectiva seção sera abordada uma breve descrição acerca do funcionamento de alguns kernels.</p>
+          <h4>Linear</h4>
+          <p align="justify">O kernel linear em relação as outras funções kernel é a mais simples. Ele é simplesmente o produto interno das variáveis com a adição de um possível parâmetro adicional <img src="https://tex.s2cms.ru/svg/c" alt="c" />. Ou seja:</p>
+          <p align="center">k(<img src="https://tex.s2cms.ru/svg/x_%7Bi%7D" alt="x_{i}" />,<img src="https://tex.s2cms.ru/svg/x_%7Bj%7D" alt="x_{j}" />) = <img src="https://tex.s2cms.ru/svg/x_%7Bi%7D%5E%7BT%7D" alt="x_{i}^{T}" /><img src="https://tex.s2cms.ru/svg/x_%7Bj%7D" alt="x_{j}" /> + <img src="https://tex.s2cms.ru/svg/c" alt="c" /></p>
+          <h4>Polinomial</h4>
+          <p align="center">k(<img src="https://tex.s2cms.ru/svg/x_%7Bi%7D" alt="x_{i}" />,<img src="https://tex.s2cms.ru/svg/x_%7Bj%7D" alt="x_{j}" />) = (<img src="https://tex.s2cms.ru/svg/%5Calpha" alt="\alpha" /><img src="https://tex.s2cms.ru/svg/x_%7Bi%7D%5E%7BT%7D" alt="x_{i}^{T}" /><img src="https://tex.s2cms.ru/svg/x_%7Bj%7D" alt="x_{j}" /> + <img src="https://tex.s2cms.ru/svg/c" alt="c" />)<img src="https://tex.s2cms.ru/svg/%5E%7Bd%7D" alt="^{d}" /></p>
+          <p align="justify">Onde <img src="https://tex.s2cms.ru/svg/%5Calpha" alt="\alpha" /> é um parâmetro multiplicativo, <img src="https://tex.s2cms.ru/svg/c" alt="c" /> é um parâmetro aditivo e <img src="https://tex.s2cms.ru/svg/d" alt="d" /> é o grau do kernel polinomial, que para o nosso caso é 3, pois é o valor no pacote utilizado para as análises.</p>
+          <h4>Gaussiano</h4>
+          <p align="justify">O kernel Gaussiano é representado pela fórmula:</p>
+          <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/k(%24x_%7Bi%7D%24%2C%24x_%7Bj%7D%24)%20%3D%20exp%20(%20-%20%24%5Cfrac%7B%7C%7Cx_%7Bi%7D-x_%7Bj%7D%7C%7C%5E%7B2%7D%7D%7B2%5Ctheta%5E%7B2%7D%7D%24)" alt="k($x_{i}$,$x_{j}$) = exp ( - $\frac{||x_{i}-x_{j}||^{2}}{2\theta^{2}}$)" /></p>
+          <h4>Sigmoid</h4>
+          <p align="justify">O kernel Sigmoid vêm do campo das redes neurais, onde a função sigmoid é constantemente utilizada para ativação dos neurônios:</p>
+          <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/k(%24x_%7Bi%7D%24%2C%24x_%7Bj%7D%24)%20%3D%20tanh%20(%24%5Calpha%24%20%24x_%7Bi%7D%5E%7BT%7D%24%20%24x_%7Bj%7D%24%20%2B%20%24c%24)" alt="k($x_{i}$,$x_{j}$) = tanh ($\alpha$ $x_{i}^{T}$ $x_{j}$ + $c$)" /></p>
+          <p align="justify">Onde <img src="https://tex.s2cms.ru/svg/%5Calpha" alt="\alpha" /> representa o parâmetro multiplicativo e <img src="https://tex.s2cms.ru/svg/c" alt="c" /> o parâmetro aditivo.</p>
+          <br>
+          <br>
+
+          <h3>Referências</h3>
+          <p>MALIK, U.Implementing SVM and Kernel SVM with Python’s Scikit-Learn. 2018.<https://stackabuse.com/implementing-svm-and-kernel-svm-with-pythons-scikit-learn/>.</p>
+
+          <p>WOLFE, P. A duality theorem for non-linear programming.Quarterly of appliedmathematics, v. 19, n. 3, p. 239–244, 1961.</p>
+
+          <p>SOMAN, K.; LOGANATHAN, R.; AJAY, V.Machine learning with SVM and otherkernel methods. [S.l.]: PHI Learning Pvt. Ltd., 2009.</p>
+
+          <p>VAPNIK, V. N. Adaptive and learning systems for signal processing communications,and control.Statistical learning theory, John Wiley & Sons, 1998.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <!-- <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span> -->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <!-- <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span> -->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <!-- <p class="copyright text-muted">Copyright &copy; Your Website 2019</p> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
