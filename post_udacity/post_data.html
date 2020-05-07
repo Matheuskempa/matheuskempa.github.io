@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Matheus Kempa</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">M Kempa</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modelos.html">Modelos - ML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Quem sou eu ?</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post1.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>AIRBNB CASE</h1>
+            <h2 class="subheading"> Data Mining Process with Predictions</h2>
+            <span class="meta">Posted by
+              <a href="#">Matheus Kempa -</a>
+              May 3, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p align ="justify">On this post i'm going to provide a brief basic introduction in all the data mining process and modeling it to predict somenthing, 
+            that basically consists on picking a dataset and get some insights with it. We are going to apply 
+            all this concepts to one example, because our main goal here is see
+            how this concepts are in a real world problem.</a></p>
+
+          <p align ="justify">First of all, all the data was provided by <a href="https://www.kaggle.com/airbnb/seattle/data">Kaggle</a> and Kaggle is one of the most large world's data science community, and people use to  share their innovations, datasets, ideias and other related things.</p>
+
+          <p align ="justify">Before we start i would like to emphasize that this article is not too complex, anyone how already knows a bit of python should understand it. I tryied to comment every line
+            of code so that everyone could follow it. 
+            
+            I will analise <a href="https://www.kaggle.com/airbnb/seattle/data">Boston AIRBNB Data Set</a>. I am looking to help
+             people on the cleaning datasets e how to deal with some especific data. In this post we are going to cover all the subjects bellow:</p>
+
+             1. Business Understanding: Understand the problem 
+             <br>
+
+             2. Data Understanding:  Understand the data to solve your problem
+             <br>
+             3. Data Preparation: Organizing it in a way that will allow us to answer our questions of interests.	
+             <br>
+             4. Modeling: Building a predictive model
+             <br>
+             5. Evaluation: Avaliate
+             <br>
+             6. Insights
+             <br>
+             Let's start!</p>
+
+             <blockquote class="blockquote"><p>This is the <a href="WebScraping.html">link</a>  for those who want to see the full code without any futher comments.</p></blockquote>
+             
+
+          <h2 class="section-heading">Business Understanding</h2>
+
+          <p align ="justify">I am solving one question here:
+            <br>
+            <li>Can I predict the rent Price? Are There any correlations that we can made, in order to help us to get insights of it?</a></p></li> 
+          
+            <h2 class="section-heading">Data Understanding</h2>
+
+            <p align ="justify">Now that we have stabilished our goal, we need to undestand our data in order to get there.
+              <br></p>
+
+
+          <p>Let's import the libraries that will support us for this work:</p>
+
+
+          <style type="text/css">
+
+
+    .highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+            div.input_area {
+              border: 1px solid #cfcfcf;
+              border-radius: 2px;
+              background: #f7f7f7;
+              line-height: 1.21429em;
+            }
+          
+            </style>
+
+ 
+          
+ 
+<div class="input_area">
+
+<div class=" highlight hl-ipython3"><pre><span><div class=" highlight hl-ipython3"><pre><span></span></span><span class="c1">#first we import de the libraries wich are going to be used</span>
+  <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+  <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+  <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+  <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LinearRegression</span>
+  <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+  <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">r2_score</span><span class="p">,</span> <span class="n">mean_squared_error</span>  
+  <span class="c1">#then we open the sugested datasets</span>
+  <span class="n">df_calendar</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;calendar.csv&quot;</span><span class="p">)</span>
+</div></div></div>
+          <p align ="justify">As you can see we can open the file using Pandas library.</p>
+
+          <p align ="justify">Now let's take a look on our dataset.</p>
+
+<div class="input_area">
+  <div class=" highlight hl-ipython3"><pre><span><div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_listings</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#looking listings</span>
+</div></div></div>
+<blockquote class="blockquote"><p>In order to see the outputs of each code click <a href="code_post.html">here</a></p></blockquote>
+ 
+
+
+          <p align ="justify">After taking a look in all variables i listed some of them to use, and others to drop. I tryied to choose the best collumns, that could give the best prediction. </p>
+
+<li> host_response_time</li>
+<li> host_response_rate</li>
+<li> host_acceptance_rate</li>
+<li> host_is_superhost</li>
+<li> host_total_listings_count</li>
+<li> latitude</li>
+<li> longitude</li>
+<li> property_type</li>
+<li> room_type</li>
+<li> accommodates</li>
+<li> bathrooms</li>
+<li> bedrooms</li>
+<li> beds</li>
+<li> bed_type</li>
+<li> amenities</li>
+<li> square_feet</li>
+<li> security_deposit</li>
+<li> cleaning_fee</li>
+<li> guests_included</li>
+<li> extra_people</li>
+<li> review_scores_rating</li>
+<li> review_scores_accuracy</li>
+<li> review_scores_cleanliness</li>
+<li> review_scores_checkin</li>
+<li> review_scores_communication</li>
+<li> review_scores_location</li>
+<li> review_scores_value</li>
+<li>cancellation_policy</li> 
+
+
+
+<h2 class="section-heading">Data Preparation</h2>
+
+<p align ="justify">Now that we have stabilished our goal, we need to undestand our data in order to get there.
+  <br></p>
+        
+          <p align ="justify">Now out next task will be clean this data set. The Cleaning process basically is:</p>
+          <li>Drop NANs columns/rows: For we to drop a column, this column need to be very incompleted(NANs values) or a columns that won't help us to achieve our goals.</li>
+          <li>Fill NANs rows: We might fill the miissing rows with the media value for some cases.</li>
+          <li>Converting Types: Converting type is necessary for the computer can read our code. All columns have to be numbers.</li>
+          <li>Get Dummy variables/Categorical Variables: This is for categorical features, so that the computer can understand how data is distribuited.</li>
+<br>
+
+<h4>Any Data Conclusions?</h4>
+
+<p align = "justify">1. As we can see square_feet is the columns with most NAN values, so we are going to drop it.
+<br>
+  2. For bathrooms, bedrooms and beds, as we understand that they exist, but for some reason didn't show up. We will fill it with the int(mean or average)
+  <br>
+  3. Column Security_deposit all the NAN values will be replaced by 0
+  <br>
+  4. All the review_scores with NAN values will be dropped, because we can't put a value that it doesn't exist
+  <br>
+  5. Column cleaning_fee all the NAN values will be replaced by 0
+  <br>
+  6. All the host_response_time,host_is_superhost NANs we are going to be dropped because they are categorical features
+  <br>
+  7. All the host_response_rate,host_acceptance_rate NANs we are going to be filled with their mean/average.
+  <br>
+  8. We will also drop the rows of property_type that have NANs values</p>
+
+
+
+
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><div class=" highlight hl-ipython3"><pre><span></span>
+    <span class="c1">#symbols</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">)</span><span class="c1">#removing symbol</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_acceptance_rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_acceptance_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">)</span><span class="c1">#removing symbol</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="c1">#removing symbol</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;cleaning_fee&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;cleaning_fee&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="c1">#removing symbol</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;extra_people&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;extra_people&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="c1">#removing symbol</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="c1">#removing symbol</span>
+
+
+  <span class="n">mean_1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;cleaning_fee&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span><span class="c1">#replacing 0</span>
+            <span class="s2">&quot;security_deposit&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00&quot;</span><span class="p">,</span><span class="c1">#replacing 0</span>
+            <span class="s2">&quot;bathrooms&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_base</span><span class="o">.</span><span class="n">square_feet</span><span class="o">.</span><span class="n">mean</span><span class="p">()),</span><span class="c1">#mean of the column</span>
+            <span class="s2">&quot;bedrooms&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_base</span><span class="o">.</span><span class="n">square_feet</span><span class="o">.</span><span class="n">mean</span><span class="p">()),</span> <span class="c1">#mean of the column</span>
+            <span class="s2">&quot;beds&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_base</span><span class="o">.</span><span class="n">square_feet</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="c1">#mean of the column</span>
+  <span class="p">}</span> <span class="c1">#dict</span>
+
+
+  <span class="n">df_base_t1</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="n">mean_1</span><span class="p">)</span> <span class="c1"># 2, 3 an 5.Filling with the mean() of the columns</span>
+  <span class="c1">#4 an 6. Dropping NANs on the review_scores</span>
+
+  <span class="n">df_base_t1</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;review_scores_rating&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_accuracy&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_cleanliness&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_checkin&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;review_scores_communication&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_location&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_value&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;host_response_time&#39;</span><span class="p">,</span><span class="s1">&#39;host_is_superhost&#39;</span><span class="p">],</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> 
+  <span class="c1">#7. Replacing categorical cloumns, or simbols </span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">df_base_t1</span><span class="o">.</span><span class="n">host_response_time</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+
+  <span class="c1">#creating dict for this column</span>
+  <span class="n">host_response_time</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;within an hour&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+                        <span class="s2">&quot;within a few hours&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+                        <span class="s2">&quot;within a day&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+                        <span class="s2">&quot;a few days or more&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">}</span>
+
+  <span class="n">df_base_t1</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;host_response_time&quot;</span><span class="p">:</span><span class="n">host_response_time</span><span class="p">})</span> <span class="c1">#replacing categorical</span>
+
+
+  <span class="c1">#types</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="c1">#converting type</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_acceptance_rate&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;host_acceptance_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="c1">#converting type</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;cleaning_fee&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;cleaning_fee&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="c1">#converting type</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;extra_people&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;extra_people&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="c1">#converting type</span>
+
+  <span class="c1">#symbols inteference</span>
+
+  <span class="c1"># converting price type</span>
+
+  <span class="n">df_base_t1</span><span class="o">.</span><span class="n">price</span><span class="o">=</span><span class="n">df_base_t1</span><span class="o">.</span><span class="n">price</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="c1">#converting type</span>
+
+
+  <span class="c1"># converting security_deposit type</span>
+
+  <span class="n">df_base_t1</span><span class="o">.</span><span class="n">security_deposit</span><span class="o">=</span><span class="n">df_base_t1</span><span class="o">.</span><span class="n">security_deposit</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="c1">#converting type</span>
+
+  <span class="c1">### categorical</span>
+
+  <span class="c1">#creating dict for this column</span>
+  <span class="n">host_is_superhost</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;f&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+                        <span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
+
+  <span class="n">df_base_t1</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;host_is_superhost&quot;</span><span class="p">:</span><span class="n">host_is_superhost</span><span class="p">})</span> <span class="c1">#replacing categorical</span>
+
+
+  <span class="c1">#creating dict for this column</span>
+  <span class="n">property_type</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Apartment&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+                  <span class="s2">&quot;House&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+                  <span class="s2">&quot;Condominium&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+                  <span class="s2">&quot;Townhouse&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Bed &amp; Breakfast&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Loft&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Boat&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Other&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Villa&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Dorm&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Guesthouse&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+                  <span class="s2">&quot;Entire Floor&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">}</span>
+
+  <span class="n">df_base_t1</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;property_type&quot;</span><span class="p">:</span><span class="n">property_type</span><span class="p">})</span> <span class="c1">#replacing categorical</span>
+
+
+  <span class="c1">#creating dict for this column</span>
+  <span class="n">room_type</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Entire home/apt&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+                      <span class="s2">&quot;Private room&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+                      <span class="s2">&quot;Shared room&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+
+  <span class="n">df_base_t1</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;room_type&quot;</span><span class="p">:</span><span class="n">room_type</span><span class="p">})</span> <span class="c1">#replacing categorical</span>
+
+
+
+  <span class="c1">#creating dict for this column</span>
+  <span class="n">bed_type</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Real Bed&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+              <span class="s2">&quot;Futon&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+              <span class="s2">&quot;Airbed&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+              <span class="s2">&quot;Pull-out Sofa&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+              <span class="s2">&quot;Couch&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">}</span>
+
+  <span class="n">df_base_t1</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;bed_type&quot;</span><span class="p">:</span><span class="n">bed_type</span><span class="p">})</span> <span class="c1">#replacing categorical</span>
+
+
+  <span class="c1">#creating dict for this column</span>
+  <span class="n">cancellation_policy</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;strict&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+              <span class="s2">&quot;moderate&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+              <span class="s2">&quot;flexible&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+              <span class="s2">&quot;super_strict_30&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">}</span>
+
+  <span class="n">df_base_t1</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;cancellation_policy&quot;</span><span class="p">:</span><span class="n">cancellation_policy</span><span class="p">})</span> <span class="c1">#replacing categorical</span>
+
+  </div></div></div>
+  <br>
+  <h4>Finished? Not yet...</h4>
+  <p align ="justify">All we did until now it was putting in numbers what words were showing us.</p>
+
+  <p align ="justify">property_type: As there were a lot of property types, i created four categories <li>(1=Apartment,2= House,3=Condominium,4= Others)</li><br></p> 
+  <p align ="justify">Eache one especified in the dict above. Even Though we had more types of property, i considered only four, because it could increase our dimmensionality of data.</p>
+
+  <p align ="justify">I did this to almost every variable, but one is missing, amenities, i left this one because there were a lot o categories inside of it. And even if i use get_dummy variables, it could increase the dimmensionality of the data, making the predictions get worse in the future. So i thought we could count how 
+  many good amenities are in the house, so that now we transform this information in a number.</p>
+            
+<div class="input_area"><div class=" highlight hl-ipython3"><pre><span></span><div class=" highlight hl-ipython3"><pre><span></span> 
+  <span class="n">df_base_t1</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1">#reseting the index</span>
+  
+  <span class="n">amenities</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df_base_t1</span><span class="o">.</span><span class="n">amenities</span><span class="p">:</span>
+      <span class="n">a</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+      <span class="n">amenities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+      
+  <span class="n">df_base_t1</span><span class="p">[</span><span class="s2">&quot;amenities&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">amenities</span><span class="p">)</span>
+</div></div></div>
+
+
+<h2>Modeling, Evaluating and Insights </h2>
+<p align = justify>In this part lets take a looke in our final base, modeling it in order to predict the price. After done all these things, we measure how well our model is predicting and get some insights.
+</p>
+
+<p align = justify>Bellow there is a graph for we to see how correlated our variables are.
+</p>
+<a href="##">
+  <img class="img-fluid" src="img/cor.PNG" alt="">
+</a>
+<span class="caption text-muted">Correlations</span>
+
+<p align = justify>In order to predict, we have to separate our base in:
+  <li>X_train: Train features</li>
+  <li>y_train: Train labels</li>
+  <li>X_test: Test features</li>
+  <li>y_teste: Teste labels</li>
+</p>
+
+
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><div class=" highlight hl-ipython3"><pre><span></span>
+  <span class="n">X</span><span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[[</span><span class="s2">&quot;host_response_time&quot;</span><span class="p">,</span><span class="s2">&quot;host_response_rate&quot;</span><span class="p">,</span><span class="s2">&quot;host_acceptance_rate&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;host_is_superhost&quot;</span><span class="p">,</span><span class="s2">&quot;host_total_listings_count&quot;</span><span class="p">,</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;property_type&quot;</span><span class="p">,</span><span class="s2">&quot;room_type&quot;</span><span class="p">,</span><span class="s2">&quot;accommodates&quot;</span><span class="p">,</span><span class="s2">&quot;bathrooms&quot;</span><span class="p">,</span><span class="s2">&quot;bedrooms&quot;</span><span class="p">,</span><span class="s2">&quot;beds&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;bed_type&quot;</span><span class="p">,</span><span class="s2">&quot;amenities&quot;</span><span class="p">,</span><span class="s2">&quot;security_deposit&quot;</span><span class="p">,</span><span class="s2">&quot;cleaning_fee&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;guests_included&quot;</span><span class="p">,</span><span class="s2">&quot;extra_people&quot;</span><span class="p">,</span><span class="s2">&quot;review_scores_rating&quot;</span><span class="p">,</span><span class="s2">&quot;review_scores_accuracy&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;review_scores_cleanliness&quot;</span><span class="p">,</span><span class="s2">&quot;review_scores_checkin&quot;</span><span class="p">,</span><span class="s2">&quot;review_scores_communication&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;review_scores_location&quot;</span><span class="p">,</span><span class="s2">&quot;review_scores_value&quot;</span><span class="p">,</span><span class="s2">&quot;cancellation_policy&quot;</span><span class="p">]]</span>
+
+
+  <span class="n">y</span> <span class="o">=</span> <span class="n">df_base_t1</span><span class="p">[[</span><span class="s2">&quot;price&quot;</span><span class="p">]]</span>
+  <span class="c1">#Split into train and test</span>
+  <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="o">.</span><span class="mi">30</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span> 
+  
+  <span class="n">lm_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Instantiate</span>
+  <span class="n">lm_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#Fit</span>
+          
+  <span class="c1">#Predict and score the model</span>
+  <span class="n">y_test_preds</span> <span class="o">=</span> <span class="n">lm_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> 
+  <span class="s2">&quot;The r-squared score for your model was </span><span class="si">{}</span><span class="s2"> on </span><span class="si">{}</span><span class="s2"> values.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_preds</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">))</span>  
+</div></div></div>
+
+<blockquote class="blockquote"><p>In order to see the outputs of each code click <a href="code_post.html">here</a></p></blockquote>
+ 
+<p align="justify">Finally we can see that our modelo got a r2 score,  is the proportion of the variance in the dependent variable (price) that is predictable from the independent variable(s).
+  It's a lit bit large from 1, that is max value. Where 1 basically is the best value we could achieve, and our prediction would be totally explanied by features.</p
+</div>
+  <h2> Conclusions</h2>
+<p align = justify>Our model didn't predict very well the price with a R2 Score = 0.5841. But we saw some good correlations around there. 
+  This proves that the complexibility of your data is far beyond from what we expected. Maybe we should try others models to see how they perform.
+  For now the biggest profit of this journey is the identified correlations that we can use in future posts. 
+
+</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <!-- <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span> -->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <!-- <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span> -->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <!-- <p class="copyright text-muted">Copyright &copy; Your Website 2019</p> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
