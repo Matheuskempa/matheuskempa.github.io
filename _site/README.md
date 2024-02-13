@@ -1,0 +1,2 @@
+# blog
+ Hello, welcome to my blog! Here I share my learnings about data engineering, an area that fascinates me and that is constantly evolving. You will find articles about concepts, tools, techniques and projects related to data engineering, as well as tips and resources for those who want to delve into this field. I hope you enjoy and learn something new with my content. Feel free to leave your comments, suggestions and feedbacks. Thank you for visiting!
