@@ -4,3 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 gem "jekyll"
+
+gem "kramdown-parser-gfm"
+
+gem "rexml"

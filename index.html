@@ -1,5 +1,19 @@
 ---
-layout: default
+layout: page
 title: Home
+subtitle: Always Leaning
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+ 
+{% for post in site.posts %}
+
+    <div class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">            
+                {{ post.title }}            
+            </h2>
+        </a>
+  {{ post.excerpt }}
+  <p class="post-meta">Postado por {{post.author}} em {{ post.date | date: "%-d/%m/%Y" }}</p>
+
+
+{% endfor %}
