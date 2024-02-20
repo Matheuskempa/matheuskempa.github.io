@@ -4,23 +4,7 @@ name: Matheus Kempa Severino
 position: Data Enginner
 ---
 
----
-##  name: Haha Ha
-header:
-  - text: <span class="iconify" data-icon="tabler:phone"></span> (+1) 123-456-7890
-  - text: <span class="iconify" data-icon="tabler:mail"></span> renovamenzxh@gmail.com
-    link: mailto:renovamenzxh@gmail.com
-  - text: <span class="iconify" data-icon="tabler:brand-github"></span> Renovamen
-    link: https://github.com/Renovamen
-  - text: <span class="iconify" data-icon="tabler:brand-linkedin"></span> xiaohan-zou
-    link: https://www.linkedin.com/in/xiaohan-zou/
-  - text: <span class="iconify" data-icon="charm:person"></span> zxh.io
-    link: https://zxh.io
-  - text: <span class="iconify" data-icon="ic:outline-location-on"></span> 1234 Abc Street, Boston, MA 02215
-    newLine: true
----
-
-## Education
+# Education
 
 **University of Charles River**
   ~ Boston, MA
@@ -35,7 +19,7 @@ B.Eng. in Software Engineering
   ~ 09/2016 - 07/2020
 
 
-## Publications
+# Publications
 
 [~P1]: **Eating is All You Need**
 
@@ -50,7 +34,7 @@ B.Eng. in Software Engineering
     *Computer Vision and Pattern Recognition Conference (CVPR), 2077 **(Best Paper Honorable Mention)***
 
 
-## Experience
+# Experience
 
 **Machine Learning Engineer Intern**
   ~ Slow Feet Technology
@@ -89,7 +73,7 @@ B.Eng. in Software Engineering
 - Outperformed strong baselines on QWE'15 and ASDF'14 dataset
 
 
-## Awards and Honors
+# Awards and Honors
 
 **Gold**, International Collegiate Catching Fish Contest (ICCFC)
   ~ 2018
@@ -98,7 +82,7 @@ B.Eng. in Software Engineering
   ~ 2017, 2018
 
 
-## Skills
+# Skills
 
 **Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java
 
