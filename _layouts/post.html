@@ -2,7 +2,7 @@
 layout: page
 ---
 
-
+{{ content }}
 <p>
   {{ page.date | date_to_string }}
   {% assign author = site.authors | where: 'short_name', page.author | first %}
@@ -10,5 +10,3 @@ layout: page
     - <a href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
 </p>
-
-{{ content }}
