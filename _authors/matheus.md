@@ -2,6 +2,7 @@
 short_name: matheus
 name: Matheus Kempa Severino
 position: Data Enginner
+image: curriculum.jpg 
 ---
 
 # Education

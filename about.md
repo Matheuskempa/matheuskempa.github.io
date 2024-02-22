@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+image: journey.jpg 
 ---
 # About page
 
