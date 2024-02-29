@@ -5,88 +5,141 @@ position: Data Enginner
 image: curriculum.jpg 
 ---
 
-# Education
-
-**University of Charles River**
-  ~ Boston, MA
-
-M.S. in Computer Science
-  ~ 09/2021 - 01/2023
-
-**Huangdu Institute of Technology**
-  ~ Shanghai, China
-
-B.Eng. in Software Engineering
-  ~ 09/2016 - 07/2020
-
-
-# Publications
-
-[~P1]: **Eating is All You Need**
-
-    <u>Haha Ha</u>, San Zhang
-
-    *Conference on Neural Information Processing Systems (NeurIPS), 2099*
-
-[~P2]: **You Only Cook Once: Unified, Real-Time Mapo Tofu Recipe**
-
-    <u>Haha Ha</u>, San Zhang, Si Li, Wu Wang
-
-    *Computer Vision and Pattern Recognition Conference (CVPR), 2077 **(Best Paper Honorable Mention)***
-
-
 # Experience
 
-**Machine Learning Engineer Intern**
-  ~ Slow Feet Technology
-  ~ 07/2021 - Present
+**Data Engineer**
+<font color='purple'>BRBCARD</font>
 
-- Devised a new food-agnostic formulation for fine-grained cross-ingredient meal cooking and subsumed the recent popular works into the proposed scheme
-- Proposed a cream of mushroom soup recipe which is competitive when compared with the SOTA recipes with complex steps by only altering the way of cutting mushroom, published in NeurIPS 2099 (see [~P1])
-- Developed a pan for meal cooking which is benefiting the group members' research work
+:calendar: June 2022 – Today   
+🌎Brasília,Brazil
+
+- Management of the volume, variety, speed and veracity of processes involving data; 
+- Review and propose improvements to data models; 
+- Build Data Marts – Multidimensional Modeling; 
+- Define and implement ETLs (Airflow - SQLAgent Jobs); 
+- Create integration flows with APIs (CRM); 
+- Develop, sustain and improve dashboards/reports/internal processes;
+
+---
+**Data Engineer/ Cientist (Variable Income)**
+<font color='purple'>VLGI Investimentos</font>
+
+:calendar: April 2021 – June 2022   
+🌎Brasília,Brazil
+
+- Management tools for obtaining, transforming, loading, serving and visualizing data 
+- Create pipelines and ETLs (Airflow - DBT); 
+- Collect and process data from different sources (APIs, Databases (PostgreSQL), Websites); 
+- Present analysis and results through data visualization. (Power BI and MetaBase)
+
+---
+**Data Analyst - Developer Grant**
+<font color='purple'>I3GS</font>
+
+:calendar: June 2020 – April 2021   
+🌎Brasília,Brazil
+
+- Construction of Machine Learning algorithm models (Python); 
+- Process Automation (Python); 
+- Database systems management (PostgreSQL) 
+- Generate information about your potential developments, in particular, with the development of socio-environmental indicators.
+
+---
+**Researcher/ Data Scientist**
+<font color='purple'>LAMFO - UNB</font>
+
+:calendar: August 2019 – December 2022  
+🌎Brasília,Brazil
+
+- Apply Machine Learning models to real problems (Python); 
+- Articles publication (Academic and online): Propensity Score Matching 
+- Creation of Dashboards (BI): COVID-19: Previsões e Microsoft Power Bi; 
+- WebScrapping (Python); 
+- Leader of an ML project applied to sports. Machine Learning Algorithms for Football Predictions
+
+---
+**Market Intelligence Analyst**
+<font color='purple'>CocaCola - Brasal Refrigerantes</font>
+
+:calendar: May 2019 – August 2019
+🌎Brasília,Brazil
+
+- Support the commercial area, managing new products campaigns data; 
+- Provide reports, follow ups and new insights of Coca Cola Products and Campaigns; 
+- Create incentives for the commercial area; 
+- Monitor the salespeople performance;
 
 
-**Reseach Intern**
-  ~ Paddling University
-  ~ 08/2020 - Present
+## Projects
 
-- Designed an efficient method for mapo tofu quality estimation via thermometer
-- Proposed a fast stir frying algorithm for tofu cooking problems, which specifies the amount of the hot sauce instead of using terms like "as much as you can", published in CVPR 2077 (see [~P2])
-- Outperformed SOTA methods while cooking much more efficient in experiments on popular tofu
+**Fraud Project**
+<font color='purple'>Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata</font>
 
+:calendar: January 2018 – January 2019
+🌎Brasília,Brazil
 
-**Research Assistant**
-  ~ Huangdu Institute of Technology
-  ~ 03/2020 - 06/2020
+The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
 
-- Proposed a novel framework consisting of a spoon and a pair of chopsticks for eating mapo toufu
-- Designed a tofu filtering strategy inspired by beans grinding method for building a dataset for this new task
-- Designed two new evaluation criteria to assess the novelty and diversity of the eating plans
-- Outperformed baselines and existed methods substantially in terms of diversity, novelty and coherence
+# Education
 
 
-**Reseach Intern**
-  ~ Paddling University
-  ~ 07/2018 - 08/2018
+**Postgraduate Course. Financial Management**
+<font color='purple'>Fundação Getúlio Vargas (FGV)</font>
+:calendar: Jan 2020 – Dec 2020
 
-- Designed two sandwiches consisting of breads and meat of two traditional bacon cheese burgers to make use of unused ingredients
-- Utilized the structure duality to boost the cooking speed of two dual tasks based on shared ingredients
-- Outperformed strong baselines on QWE'15 and ASDF'14 dataset
+**Postgraduate Course. Big Data**
+<font color='purple'>Descomplica)</font>
+:calendar: Jan 2023 – On going
+
+**BA. Business Administration**
+<font color='purple'>University of Brasília (UnB)</font>
+:calendar: Jan 2014 – Dec 2018
+
+**Nanodegree Course. Data Scientist**
+<font color='purple'>Udacity)</font>
+:calendar: May 2020 – Set 2020
+
+**Student Exchange Program.
+Communication, Design Innovation**
+<font color='purple'>California State University (CSUN)</font>
+:calendar: Ago 2017 – Ago 2017
+
+**Master Degree Course. Finance
+(Applied to Machine Learning)**
+<font color='purple'>University Of Brasília (UnB)</font>
+:calendar:  Jan 2022 - Paused
+
+# Certifications
+
+**DP - 900** 
+<font color='purple'>Microsoft Azure</font>
+:calendar: Mar 2023 
+
+**AI - 900**
+<font color='purple'>Microsoft Azure</font>
+:calendar: Fev 2023 
+
+**Nanodegree Data Science** 
+<font color='purple'>Udacity</font>
+:calendar: Ago 2020
+
+# Publications
+[Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]: https://www.sciencedirect.com/science/article/pii/S2666827021000372
 
 
-# Awards and Honors
 
-**Gold**, International Collegiate Catching Fish Contest (ICCFC)
-  ~ 2018
+**[Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]**
 
-**First Prize**, China National Scholarship for Outstanding Dragons
-  ~ 2017, 2018
+:calendar: January 2018 – January 2019
+🌎Brasília,Brazil
 
+The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
+    
 
 # Skills
 
-**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java
+**Programming Languages:** Python, SQL, R
 
-**Tools and Frameworks:** Git, PyTorch, Keras, scikit-learn, Linux, Vue, React, Django, $\LaTeX$
+**Tools and Frameworks:**  Git, Airflow, Flask, DBT, GraphQL, Spark, $\LaTeX$
 
-**Languages:** Chinese (native), English (proficient)
+**Languages:** Portuguese (native), English (proficient)
