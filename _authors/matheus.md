@@ -70,58 +70,43 @@ image: curriculum.jpg
 - Monitor the salespeople performance;
 
 
-## Projects
-
-**Fraud Project**
-<font color='purple'>Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata</font>
-
-> Period: January 2018 – January 2019
-🌎Brasília,Brazil
-
-The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
-
 # Education
 
+**Nanodegree Course. Data Scientist**
+    <font color='purple'>Udacity)</font>
+    > Period: May 2020 – Set 2020
 
 **Postgraduate Course. Financial Management**
-<font color='purple'>Fundação Getúlio Vargas (FGV)</font>
-> Period: Jan 2020 – Dec 2020
-
-**Postgraduate Course. Big Data**
-<font color='purple'>Descomplica)</font>
-> Period: Jan 2023 – On going
+    <font color='purple'>Fundação Getúlio Vargas (FGV)</font>
+    > Period: Jan 2020 – Dec 2020
 
 **BA. Business Administration**
-<font color='purple'>University of Brasília (UnB)</font>
-> Period: Jan 2014 – Dec 2018
-
-**Nanodegree Course. Data Scientist**
-<font color='purple'>Udacity)</font>
-> Period: May 2020 – Set 2020
+    <font color='purple'>University of Brasília (UnB)</font>
+    > Period: Jan 2014 – Dec 2018
 
 **Student Exchange Program.
 Communication, Design Innovation**
-<font color='purple'>California State University (CSUN)</font>
-> Period: Ago 2017 – Ago 2017
+    <font color='purple'>California State University (CSUN)</font>
+    > Period: Ago 2017 – Ago 2017
 
-**Master Degree Course. Finance
-(Applied to Machine Learning)**
-<font color='purple'>University Of Brasília (UnB)</font>
-> Period:  Jan 2022 - Paused
+**Postgraduate Course. Big Data**
+    <font color='purple'>Descomplica</font>
+    > Period: Jan 2023 – On going
+
 
 # Certifications
 
 **DP - 900** 
-<font color='purple'>Microsoft Azure</font>
-> Period: Mar 2023 
+    <font color='purple'>Microsoft Azure</font>
+    > Period: Mar 2023 
 
 **AI - 900**
-<font color='purple'>Microsoft Azure</font>
-> Period: Fev 2023 
+    <font color='purple'>Microsoft Azure</font>
+    > Period: Fev 2023 
 
 **Nanodegree Data Science** 
-<font color='purple'>Udacity</font>
-> Period: Ago 2020
+    <font color='purple'>Udacity</font>
+    > Period: Ago 2020
 
 # Publications
 [Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]: https://www.sciencedirect.com/science/article/pii/S2666827021000372
