@@ -10,7 +10,7 @@ image: curriculum.jpg
 **Data Engineer**
 <font color='purple'>BRBCARD</font>
 
-:calendar: June 2022 – Today   
+> Period: June 2022 – Today   
 🌎Brasília,Brazil
 
 - Management of the volume, variety, speed and veracity of processes involving data; 
@@ -24,7 +24,7 @@ image: curriculum.jpg
 **Data Engineer/ Cientist (Variable Income)**
 <font color='purple'>VLGI Investimentos</font>
 
-:calendar: April 2021 – June 2022   
+> Period: April 2021 – June 2022   
 🌎Brasília,Brazil
 
 - Management tools for obtaining, transforming, loading, serving and visualizing data 
@@ -36,7 +36,7 @@ image: curriculum.jpg
 **Data Analyst - Developer Grant**
 <font color='purple'>I3GS</font>
 
-:calendar: June 2020 – April 2021   
+> Period: June 2020 – April 2021   
 🌎Brasília,Brazil
 
 - Construction of Machine Learning algorithm models (Python); 
@@ -48,7 +48,7 @@ image: curriculum.jpg
 **Researcher/ Data Scientist**
 <font color='purple'>LAMFO - UNB</font>
 
-:calendar: August 2019 – December 2022  
+> Period: August 2019 – December 2022  
 🌎Brasília,Brazil
 
 - Apply Machine Learning models to real problems (Python); 
@@ -61,7 +61,7 @@ image: curriculum.jpg
 **Market Intelligence Analyst**
 <font color='purple'>CocaCola - Brasal Refrigerantes</font>
 
-:calendar: May 2019 – August 2019
+> Period: May 2019 – August 2019
 🌎Brasília,Brazil
 
 - Support the commercial area, managing new products campaigns data; 
@@ -75,7 +75,7 @@ image: curriculum.jpg
 **Fraud Project**
 <font color='purple'>Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata</font>
 
-:calendar: January 2018 – January 2019
+> Period: January 2018 – January 2019
 🌎Brasília,Brazil
 
 The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
@@ -85,43 +85,43 @@ The present study evaluated fraud prediction in property insurance claims using 
 
 **Postgraduate Course. Financial Management**
 <font color='purple'>Fundação Getúlio Vargas (FGV)</font>
-:calendar: Jan 2020 – Dec 2020
+> Period: Jan 2020 – Dec 2020
 
 **Postgraduate Course. Big Data**
 <font color='purple'>Descomplica)</font>
-:calendar: Jan 2023 – On going
+> Period: Jan 2023 – On going
 
 **BA. Business Administration**
 <font color='purple'>University of Brasília (UnB)</font>
-:calendar: Jan 2014 – Dec 2018
+> Period: Jan 2014 – Dec 2018
 
 **Nanodegree Course. Data Scientist**
 <font color='purple'>Udacity)</font>
-:calendar: May 2020 – Set 2020
+> Period: May 2020 – Set 2020
 
 **Student Exchange Program.
 Communication, Design Innovation**
 <font color='purple'>California State University (CSUN)</font>
-:calendar: Ago 2017 – Ago 2017
+> Period: Ago 2017 – Ago 2017
 
 **Master Degree Course. Finance
 (Applied to Machine Learning)**
 <font color='purple'>University Of Brasília (UnB)</font>
-:calendar:  Jan 2022 - Paused
+> Period:  Jan 2022 - Paused
 
 # Certifications
 
 **DP - 900** 
 <font color='purple'>Microsoft Azure</font>
-:calendar: Mar 2023 
+> Period: Mar 2023 
 
 **AI - 900**
 <font color='purple'>Microsoft Azure</font>
-:calendar: Fev 2023 
+> Period: Fev 2023 
 
 **Nanodegree Data Science** 
 <font color='purple'>Udacity</font>
-:calendar: Ago 2020
+> Period: Ago 2020
 
 # Publications
 [Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]: https://www.sciencedirect.com/science/article/pii/S2666827021000372
@@ -130,7 +130,7 @@ Communication, Design Innovation**
 
 **[Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]**
 
-:calendar: January 2018 – January 2019
+> Period: January 2018 – January 2019
 🌎Brasília,Brazil
 
 The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
