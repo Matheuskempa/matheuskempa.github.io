@@ -8,7 +8,7 @@ image: curriculum.jpg
 # Experience
 
 **Data Engineer**
-<font color='purple'>BRBCARD</font>
+<font color='blue'>BRBCARD</font>
 
 > Period: June 2022 – Today   
 🌎Brasília,Brazil
@@ -22,7 +22,7 @@ image: curriculum.jpg
 
 ---
 **Data Engineer/ Cientist (Variable Income)**
-<font color='purple'>VLGI Investimentos</font>
+<font color='blue'>VLGI Investimentos</font>
 
 > Period: April 2021 – June 2022   
 🌎Brasília,Brazil
@@ -34,7 +34,7 @@ image: curriculum.jpg
 
 ---
 **Data Analyst - Developer Grant**
-<font color='purple'>I3GS</font>
+<font color='blue'>I3GS</font>
 
 > Period: June 2020 – April 2021   
 🌎Brasília,Brazil
@@ -46,7 +46,7 @@ image: curriculum.jpg
 
 ---
 **Researcher/ Data Scientist**
-<font color='purple'>LAMFO - UNB</font>
+<font color='blue'>LAMFO - UNB</font>
 
 > Period: August 2019 – December 2022  
 🌎Brasília,Brazil
@@ -59,7 +59,7 @@ image: curriculum.jpg
 
 ---
 **Market Intelligence Analyst**
-<font color='purple'>CocaCola - Brasal Refrigerantes</font>
+<font color='blue'>CocaCola - Brasal Refrigerantes</font>
 
 > Period: May 2019 – August 2019
 🌎Brasília,Brazil
@@ -73,44 +73,43 @@ image: curriculum.jpg
 # Education
 
 **Nanodegree Course. Data Scientist**
-    <font color='purple'>Udacity)</font>
+    <font color='blue'>Udacity)</font>
     > Period: May 2020 – Set 2020
 
 **Postgraduate Course. Financial Management**
-    <font color='purple'>Fundação Getúlio Vargas (FGV)</font>
+    <font color='blue'>Fundação Getúlio Vargas (FGV)</font>
     > Period: Jan 2020 – Dec 2020
 
 **BA. Business Administration**
-    <font color='purple'>University of Brasília (UnB)</font>
+    <font color='blue'>University of Brasília (UnB)</font>
     > Period: Jan 2014 – Dec 2018
 
-**Student Exchange Program.
-Communication, Design Innovation**
-    <font color='purple'>California State University (CSUN)</font>
+**Student Exchange Program.Communication, Design Innovation**
+    <font color='blue'>California State University (CSUN)</font>
     > Period: Ago 2017 – Ago 2017
 
 **Postgraduate Course. Big Data**
-    <font color='purple'>Descomplica</font>
+    <font color='blue'>Descomplica</font>
     > Period: Jan 2023 – On going
 
 
 # Certifications
 
-**DP - 900** 
-    <font color='purple'>Microsoft Azure</font>
-    > Period: Mar 2023 
 
-**AI - 900**
-    <font color='purple'>Microsoft Azure</font>
-    > Period: Fev 2023 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="84226b6e-0586-4685-ae9d-99711a7290f6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> 
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f44353cf-8fc0-4110-aafd-7bcc9b579082" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1586a86c-9be5-424e-a138-0b5fad28d9e5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2eaf9660-9d78-4b01-9b96-6ab7b8de8623" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 **Nanodegree Data Science** 
-    <font color='purple'>Udacity</font>
+    <font color='blue'>Udacity</font>
     > Period: Ago 2020
 
 # Publications
 [Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]: https://www.sciencedirect.com/science/article/pii/S2666827021000372
-
 
 
 **[Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]**
@@ -125,6 +124,6 @@ The present study evaluated fraud prediction in property insurance claims using 
 
 **Programming Languages:** Python, SQL, R
 
-**Tools and Frameworks:**  Git, Airflow, Flask, DBT, GraphQL, Spark, $\LaTeX$
+**Tools and Frameworks:**  Airflow, DBT, Git, GraphQL, Flask, Spark, LaTeX
 
 **Languages:** Portuguese (native), English (proficient)
