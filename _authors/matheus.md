@@ -85,7 +85,7 @@ image: curriculum.jpg
 
 ---
 
-<img src="../assets/images/oi.png" align="center" width="150px"/>  <img src="../assets/images/caixa_seguradora.png" align="center" width="200px"/> 
+<img src="../assets/images/oi.png" align="center" width="90px"/>  <img src="../assets/images/caixa_seguradora.png" align="center" width="200px"/> 
 
 **Intern**
 
