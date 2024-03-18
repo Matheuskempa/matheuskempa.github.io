@@ -7,24 +7,30 @@ image: curriculum.jpg
 
 # Experience
 
-**Data Engineer**
-<font color='purple'>BRBCARD</font>
+<img src="../assets/images/brbcard.png" align="left" width="200px"/>
+<br clear="left"/>
 
-> Period: June 2022 – Today   
+**Senior Data Engineer**
+ 
+> Period: June 2022 – Today   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Management of the volume, variety, speed and veracity of processes involving data; 
 - Review and propose improvements to data models; 
 - Build Data Marts – Multidimensional Modeling; 
-- Define and implement ETLs (Airflow - SQLAgent Jobs); 
-- Create integration flows with APIs (CRM); 
-- Develop, sustain and improve dashboards/reports/internal processes;
+- Define and implement ETLs (Airflow - SQLAgent Jobs - DBT); 
+- Create integration flows with APIs (CRM/ Vai de Visa Integration); 
+- Develop, sustain and improve dashboards/reports/internal processes (MIcrosoft SQL Server, Power BI);
 
 ---
-**Data Engineer/ Cientist (Variable Income)**
-<font color='purple'>VLGI Investimentos</font>
 
-> Period: April 2021 – June 2022   
+<img src="../assets/images/vlgi.png" align="left" width="150px"/> 
+
+<br clear="left"/>
+
+**Data Engineer/ Cientist (Variable Income)**
+
+> Period: April 2021 – June 2022   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Management tools for obtaining, transforming, loading, serving and visualizing data 
@@ -33,10 +39,12 @@ image: curriculum.jpg
 - Present analysis and results through data visualization. (Power BI and MetaBase)
 
 ---
-**Data Analyst - Developer Grant**
-<font color='purple'>I3GS</font>
+<img src="../assets/images/I3GS.jpg" align="left" width="150px"/> 
+<br clear="left"/>
 
-> Period: June 2020 – April 2021   
+**Data Analyst - Developer Grant**
+
+> Period: June 2020 – April 2021   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Construction of Machine Learning algorithm models (Python); 
@@ -45,8 +53,11 @@ image: curriculum.jpg
 - Generate information about your potential developments, in particular, with the development of socio-environmental indicators.
 
 ---
+<img src="../assets/images/lamfo.png" align="left" width="200px"/> 
+<br clear="left"/>
+
 **Researcher/ Data Scientist**
-<font color='purple'>LAMFO - UNB</font>
+
 
 > Period: August 2019 – December 2022  
 🌎Brasília,Brazil
@@ -58,10 +69,13 @@ image: curriculum.jpg
 - Leader of an ML project applied to sports. Machine Learning Algorithms for Football Predictions
 
 ---
-**Market Intelligence Analyst**
-<font color='purple'>CocaCola - Brasal Refrigerantes</font>
+<img src="../assets/images/logo_brasal.png" align="left" width="200px"/> 
+<br clear="left"/>
 
-> Period: May 2019 – August 2019
+**Market Intelligence Analyst**
+
+
+> Period: May 2019 – August 2019 <br clear="left"/>
 🌎Brasília,Brazil
 
 - Support the commercial area, managing new products campaigns data; 
@@ -69,48 +83,67 @@ image: curriculum.jpg
 - Create incentives for the commercial area; 
 - Monitor the salespeople performance;
 
+---
+
+<img src="../assets/images/oi.png" align="center" width="90px"/>  <img src="../assets/images/caixa_seguradora.png" align="center" width="200px"/> 
+
+**Intern**
+
+
+> Period: May 2019 – August 2019 <br clear="left"/>
+🌎Brasília,Brazil
+
+- Support the commercial area, creating presentations and treating data (Access,Excel); 
+- Create Dashboards (Power BI, Excel);
+- Create KPIs;
+
+
+---
+
 
 # Education
 
 **Nanodegree Course. Data Scientist**
-    <font color='purple'>Udacity)</font>
+    <font color='blue'>Udacity)</font>
     > Period: May 2020 – Set 2020
 
 **Postgraduate Course. Financial Management**
-    <font color='purple'>Fundação Getúlio Vargas (FGV)</font>
+    <font color='blue'>Fundação Getúlio Vargas (FGV)</font>
     > Period: Jan 2020 – Dec 2020
 
 **BA. Business Administration**
-    <font color='purple'>University of Brasília (UnB)</font>
+    <font color='blue'>University of Brasília (UnB)</font>
     > Period: Jan 2014 – Dec 2018
 
-**Student Exchange Program.
-Communication, Design Innovation**
-    <font color='purple'>California State University (CSUN)</font>
+**Student Exchange Program.Communication, Design Innovation**
+    <font color='blue'>California State University (CSUN)</font>
     > Period: Ago 2017 – Ago 2017
 
 **Postgraduate Course. Big Data**
-    <font color='purple'>Descomplica</font>
+    <font color='blue'>Descomplica</font>
     > Period: Jan 2023 – On going
 
+---
 
 # Certifications
 
-**DP - 900** 
-    <font color='purple'>Microsoft Azure</font>
-    > Period: Mar 2023 
 
-**AI - 900**
-    <font color='purple'>Microsoft Azure</font>
-    > Period: Fev 2023 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="84226b6e-0586-4685-ae9d-99711a7290f6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> 
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f44353cf-8fc0-4110-aafd-7bcc9b579082" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1586a86c-9be5-424e-a138-0b5fad28d9e5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2eaf9660-9d78-4b01-9b96-6ab7b8de8623" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 **Nanodegree Data Science** 
-    <font color='purple'>Udacity</font>
+    <font color='blue'>Udacity</font>
     > Period: Ago 2020
+
+---
 
 # Publications
 [Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]: https://www.sciencedirect.com/science/article/pii/S2666827021000372
-
 
 
 **[Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]**
@@ -120,11 +153,11 @@ Communication, Design Innovation**
 
 The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
     
-
+---
 # Skills
 
 **Programming Languages:** Python, SQL, R
 
-**Tools and Frameworks:**  Git, Airflow, Flask, DBT, GraphQL, Spark, $\LaTeX$
+**Tools and Frameworks:**  Airflow, DBT, Git, GraphQL, Flask, Spark, LaTeX
 
 **Languages:** Portuguese (native), English (proficient)
