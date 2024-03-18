@@ -7,24 +7,30 @@ image: curriculum.jpg
 
 # Experience
 
-**Data Engineer**
-<font color='blue'>BRBCARD</font>
+<img src="../assets/images/brbcard.png" align="left" width="200px"/>
+<br clear="left"/>
 
-> Period: June 2022 – Today   
+**Senior Data Engineer**
+ 
+> Period: June 2022 – Today   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Management of the volume, variety, speed and veracity of processes involving data; 
 - Review and propose improvements to data models; 
 - Build Data Marts – Multidimensional Modeling; 
-- Define and implement ETLs (Airflow - SQLAgent Jobs); 
-- Create integration flows with APIs (CRM); 
-- Develop, sustain and improve dashboards/reports/internal processes;
+- Define and implement ETLs (Airflow - SQLAgent Jobs - DBT); 
+- Create integration flows with APIs (CRM/ Vai de Visa Integration); 
+- Develop, sustain and improve dashboards/reports/internal processes (MIcrosoft SQL Server, Power BI);
 
 ---
-**Data Engineer/ Cientist (Variable Income)**
-<font color='blue'>VLGI Investimentos</font>
 
-> Period: April 2021 – June 2022   
+<img src="../assets/images/vlgi.png" align="left" width="150px"/> 
+
+<br clear="left"/>
+
+**Data Engineer/ Cientist (Variable Income)**
+
+> Period: April 2021 – June 2022   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Management tools for obtaining, transforming, loading, serving and visualizing data 
@@ -33,10 +39,12 @@ image: curriculum.jpg
 - Present analysis and results through data visualization. (Power BI and MetaBase)
 
 ---
-**Data Analyst - Developer Grant**
-<font color='blue'>I3GS</font>
+<img src="../assets/images/I3GS.jpg" align="left" width="150px"/> 
+<br clear="left"/>
 
-> Period: June 2020 – April 2021   
+**Data Analyst - Developer Grant**
+
+> Period: June 2020 – April 2021   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Construction of Machine Learning algorithm models (Python); 
@@ -45,8 +53,11 @@ image: curriculum.jpg
 - Generate information about your potential developments, in particular, with the development of socio-environmental indicators.
 
 ---
+<img src="../assets/images/lamfo.png" align="left" width="200px"/> 
+<br clear="left"/>
+
 **Researcher/ Data Scientist**
-<font color='blue'>LAMFO - UNB</font>
+
 
 > Period: August 2019 – December 2022  
 🌎Brasília,Brazil
@@ -58,16 +69,36 @@ image: curriculum.jpg
 - Leader of an ML project applied to sports. Machine Learning Algorithms for Football Predictions
 
 ---
-**Market Intelligence Analyst**
-<font color='blue'>CocaCola - Brasal Refrigerantes</font>
+<img src="../assets/images/logo_brasal.png" align="left" width="200px"/> 
+<br clear="left"/>
 
-> Period: May 2019 – August 2019
+**Market Intelligence Analyst**
+
+
+> Period: May 2019 – August 2019 <br clear="left"/>
 🌎Brasília,Brazil
 
 - Support the commercial area, managing new products campaigns data; 
 - Provide reports, follow ups and new insights of Coca Cola Products and Campaigns; 
 - Create incentives for the commercial area; 
 - Monitor the salespeople performance;
+
+---
+
+<img src="../assets/images/oi.png" align="center" width="150px"/>  <img src="../assets/images/caixa_seguradora.png" align="center" width="200px"/> 
+
+**Intern**
+
+
+> Period: May 2019 – August 2019 <br clear="left"/>
+🌎Brasília,Brazil
+
+- Support the commercial area, creating presentations and treating data (Access,Excel); 
+- Create Dashboards (Power BI, Excel);
+- Create KPIs;
+
+
+---
 
 
 # Education
@@ -92,6 +123,7 @@ image: curriculum.jpg
     <font color='blue'>Descomplica</font>
     > Period: Jan 2023 – On going
 
+---
 
 # Certifications
 
@@ -108,6 +140,8 @@ image: curriculum.jpg
     <font color='blue'>Udacity</font>
     > Period: Ago 2020
 
+---
+
 # Publications
 [Machine learning algorithms for fraud prediction in property insurance: Empirical evidence using real-world microdata]: https://www.sciencedirect.com/science/article/pii/S2666827021000372
 
@@ -119,7 +153,7 @@ image: curriculum.jpg
 
 The present study evaluated fraud prediction in property insurance claims using various machine learning models based on real-world data from a major Brazilian insurance company. The models were tested recursively and average predictive results were compared controlling for false positives and false negatives. The present study was published in a international journal named Machine Learning with Applications is in process of publishing in the Journal Machine Learning with Applications.
     
-
+---
 # Skills
 
 **Programming Languages:** Python, SQL, R
