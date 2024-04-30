@@ -21,7 +21,7 @@ image: curriculum.jpg
 - Define and implement ETLs (Airflow - SQLAgent Jobs - DBT); 
 - Create integration flows with APIs (CRM/ Vai de Visa Integration); 
 - Develop, sustain and improve dashboards/reports/internal processes (MIcrosoft SQL Server, Power BI);
-- Build OpenFinance (Phase 1,2 and 4);
+- Develop OpenFinance (Phase 1,2 and 4);
 - Participate on the migration of credit card processor, modeling and architecting new database systems.
 
 
