@@ -122,10 +122,6 @@ image: curriculum.jpg
     <font color='blue'>California State University (CSUN)</font>
     > Period: Ago 2017 – Ago 2017
 
-**Postgraduate Course. Big Data**
-    <font color='blue'>Descomplica</font>
-    > Period: Jan 2023 – On going
-
 ---
 
 # Certifications
