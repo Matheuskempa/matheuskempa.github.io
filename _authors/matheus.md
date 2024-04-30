@@ -21,6 +21,9 @@ image: curriculum.jpg
 - Define and implement ETLs (Airflow - SQLAgent Jobs - DBT); 
 - Create integration flows with APIs (CRM/ Vai de Visa Integration); 
 - Develop, sustain and improve dashboards/reports/internal processes (MIcrosoft SQL Server, Power BI);
+- Develop OpenFinance (Phase 1,2 and 4);
+- Participate on the migration of credit card processor, modeling and architecting new database systems.
+
 
 ---
 
@@ -119,10 +122,6 @@ image: curriculum.jpg
     <font color='blue'>California State University (CSUN)</font>
     > Period: Ago 2017 – Ago 2017
 
-**Postgraduate Course. Big Data**
-    <font color='blue'>Descomplica</font>
-    > Period: Jan 2023 – On going
-
 ---
 
 # Certifications
@@ -136,6 +135,7 @@ image: curriculum.jpg
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2eaf9660-9d78-4b01-9b96-6ab7b8de8623" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
+---
 **Nanodegree Data Science** 
     <font color='blue'>Udacity</font>
     > Period: Ago 2020

@@ -10,10 +10,11 @@ image: data.gif
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="post-title">            
-                {{ post.title }}            
+                <!-- {{ post.title }} -->
+                {{ post.excerpt }}            
             </h2>
         </a>
-  {{ post.excerpt }}
+  
   <p class="post-meta">Posted by {{ post.name_displayed }} on {{ post.date | date: "%-d/%m/%Y" }}</p>
 
 
