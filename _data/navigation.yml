@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
+# - name: About
+#   link: /about.html
 - name: Curriculum
   link: /authors/matheus.html
 # - name: Blog
