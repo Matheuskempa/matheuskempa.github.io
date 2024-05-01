@@ -9,8 +9,6 @@ image: oracle.png
 
 
   
-## Introduction
-
 This BI project is aimed at the Brazilian Football Championship. The goal is to collect, process and visualize relevant data to provide valuable insights into the championship.
 The project ranges from creating a Data Mart to creating dashboards to reflect the data.
 
