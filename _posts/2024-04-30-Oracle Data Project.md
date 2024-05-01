@@ -6,7 +6,8 @@ image: oracle.png
 ---
 
 # Data Mart Project on Oracle Cloud OCI
-  
+
+
   
 ## Introduction
 
