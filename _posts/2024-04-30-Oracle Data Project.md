@@ -13,7 +13,7 @@ This BI project is aimed at the Brazilian Football Championship. The goal is to 
 The project ranges from creating a Data Mart to creating dashboards to reflect the data.
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9)
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9){:height="400" width="600px"}
 {: refdef}
 
 
@@ -43,7 +43,7 @@ After the ETL process is complete, the data is consumed by reports. These report
 ## Overall Architecture
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68){:style="display:block; margin-left:auto; margin-right:auto"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68){:height="400" width="600px"}
 {: refdef}
 
 ## Modeling Architecture
@@ -51,7 +51,7 @@ After the ETL process is complete, the data is consumed by reports. These report
 The modeling was developed following the proposed by Ralph Kimball, the StarSchema model.
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031){:style="display:block; margin-left:auto; margin-right:auto"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031){:height="400" width="600px"}
 {: refdef}
 
 ## Sample Dashboard
@@ -59,7 +59,7 @@ The modeling was developed following the proposed by Ralph Kimball, the StarSche
 I've create a sample Dashboard for showing how its going.
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e){:style="display:block; margin-left:auto; margin-right:auto"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e){:height="400" width="600px"}
 {: refdef}
 
 
