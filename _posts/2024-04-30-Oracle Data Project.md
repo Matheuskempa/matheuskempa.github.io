@@ -12,7 +12,9 @@ image: oracle.png
 This BI project is aimed at the Brazilian Football Championship. The goal is to collect, process and visualize relevant data to provide valuable insights into the championship.
 The project ranges from creating a Data Mart to creating dashboards to reflect the data.
 
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9){:style="display:block; margin-left:auto; margin-right:auto"}
+{:refdef: style="text-align: center;"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9)
+{: refdef}
 
 
 ## ETL Process:
@@ -40,22 +42,25 @@ After the ETL process is complete, the data is consumed by reports. These report
 
 ## Overall Architecture
 
-
+{:refdef: style="text-align: center;"}
 ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68){:style="display:block; margin-left:auto; margin-right:auto"}
-
+{: refdef}
 
 ## Modeling Architecture
 
 The modeling was developed following the proposed by Ralph Kimball, the StarSchema model.
 
+{:refdef: style="text-align: center;"}
 ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031){:style="display:block; margin-left:auto; margin-right:auto"}
-
+{: refdef}
 
 ## Sample Dashboard
 
 I've create a sample Dashboard for showing how its going.
 
+{:refdef: style="text-align: center;"}
 ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e){:style="display:block; margin-left:auto; margin-right:auto"}
+{: refdef}
 
 
 The project is still not over, at the current moment steps 1,2,3 are finished but they are not fully orchestrared.
