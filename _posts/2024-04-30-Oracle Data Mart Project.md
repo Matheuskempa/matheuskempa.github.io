@@ -5,9 +5,8 @@ name_displayed: Matheus Kempa
 image: oracle.png
 ---
 
-# Data Mart Project on Oracle Cloud OCI
+# DataMart Project on Oracle Cloud
 
-  
 This is the first post of this blog and this post will be dedicated to one BI project and we are going to use Oracle Cloud Infrastructure (OCI). Since this is a blog post and not an academic paper, the main focus it will be "delivery good content with good and real projects" always with emphasis ont practice part. The theory behind will also be covered and the references will be shown at the end of the post. Without further ado let's dive in the concepts that are necessary to understand this Project. 
 
 ## Concepts
@@ -34,11 +33,11 @@ Star schema modeling is a popular technique used in data warehouse design. It in
 So This BI project aims to Brazilian Football Championship and the goal is to collect, process and visualize relevant data to provide valuable insights into the championship.
 The project will cover since the creation of the Data Mart, to the ETL and the creation of the Dashboards to reflect the data.
 
-<img class="img-fluid"> 
-{:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9)
-{: refdef}
-</img>
+
+<!-- ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9) -->
+
+<img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9" alt="Resume" style="width:800px;"/>
+
 
 ## Architecture
 
@@ -51,9 +50,12 @@ The architecture consists of four parts:
 
 As shown in the image below:
 
-{:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68)
-{: refdef}
+
+<!-- ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68) -->
+
+<img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68" alt="Resume" style="width:800px;"/>
+
+
 
 Now let's delve deeper into this architecture and explain the entire Extraction, Transformation, and Loading (ETL) process. As an Oracle expert, I probably didn't do it in the best way possible (using Oracle best practices), because at the current time, this project is my first contact with Oracle Cloud. So here is how it was done: 
 
@@ -87,10 +89,10 @@ After the ETL process is complete, the data is consumed by reports. These report
 
 The modeling was developed following the proposed by Ralph Kimball, the Star-Schema model.
 
-{:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031)
-{: refdef}
 
+<!-- ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031) -->
+
+<img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031" alt="Resume" style="width:800px;"/>
 
 
 
@@ -98,9 +100,11 @@ The modeling was developed following the proposed by Ralph Kimball, the Star-Sch
 
 This Dashboard were created using Oracle Cloud Anlytics , (...)
 
-{:refdef: style="text-align: center;"}
+<!-- {:refdef: style="text-align: center;"}
 ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e)
-{: refdef}
+{: refdef} -->
+
+<img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e" alt="Resume" style="width:800px;"/>
 
 
 ## Conclusions
