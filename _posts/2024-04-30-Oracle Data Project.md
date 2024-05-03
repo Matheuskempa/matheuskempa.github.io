@@ -35,7 +35,7 @@ So This BI project aims to Brazilian Football Championship and the goal is to co
 The project will cover since the creation of the Data Mart, to the ETL and the creation of the Dashboards to reflect the data.
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9){:height="400" width="600px"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9)
 {: refdef}
 
 
@@ -51,7 +51,7 @@ The architecture consists of four parts:
 As shown in the image below:
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68){:height="400" width="600px"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68)
 {: refdef}
 
 Now let's delve deeper into this architecture and explain the entire Extraction, Transformation, and Loading (ETL) process. As an Oracle expert, I probably didn't do it in the best way possible (using Oracle best practices), because at the current time, this project is my first contact with Oracle Cloud. So here is how it was done: 
@@ -87,7 +87,7 @@ After the ETL process is complete, the data is consumed by reports. These report
 The modeling was developed following the proposed by Ralph Kimball, the Star-Schema model.
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031){:height="400" width="600px"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031)
 {: refdef}
 
 
@@ -98,7 +98,7 @@ The modeling was developed following the proposed by Ralph Kimball, the Star-Sch
 This Dashboard were created using Oracle Cloud Anlytics , (...)
 
 {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e){:height="400" width="600px"}
+![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e)
 {: refdef}
 
 
