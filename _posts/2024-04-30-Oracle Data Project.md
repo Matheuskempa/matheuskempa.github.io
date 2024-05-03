@@ -6,6 +6,7 @@ image: oracle.png
 ---
 
 # Data Mart Project on Oracle Cloud OCI
+
   
 This is the first post of this blog and this post will be dedicated to one BI project and we are going to use Oracle Cloud Infrastructure (OCI). Since this is a blog post and not an academic paper, the main focus it will be "delivery good content with good and real projects" always with emphasis ont practice part. The theory behind will also be covered and the references will be shown at the end of the post. Without further ado let's dive in the concepts that are necessary to understand this Project. 
 
