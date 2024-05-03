@@ -54,9 +54,7 @@ As shown in the image below:
 ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68){:height="400" width="600px"}
 {: refdef}
 
-## Creation and ETL Process Detailed:
-
-Now let's go deep into this architecture and explain the whole Extraction, Transformation and Loading (ETL) process. For Oracle experts, I probably did not do in the best way possible (using oracle best practises), because at the current time this project is my first contact with Oracle cloud and with PL/SQL (in my carrier  worked with Microsoft SQL Server and Postgre SQL), so it was kind of a test test for me. Here is how was done: 
+Now let's go deep into this architecture and explain the whole Extraction, Transformation and Loading (ETL) process. For Oracle experts, I probably didn't do in the best way possible (using oracle best practises), because at the current time this project is my first contact with Oracle cloud. So here is how was done: 
 
 1. Football Data Collection: Data is collected by a Python script.
 This script is responsible for extracting the relevant data necessary for the analysis.
