@@ -54,7 +54,13 @@ As shown in the image below:
 ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68){:height="400" width="600px"}
 {: refdef}
 
-Now let's go deep into this architecture and explain the whole Extraction, Transformation and Loading (ETL) process. For Oracle experts, I probably didn't do in the best way possible (using oracle best practises), because at the current time this project is my first contact with Oracle cloud. So here is how was done: 
+Now let's delve deeper into this architecture and explain the entire Extraction, Transformation, and Loading (ETL) process. As an Oracle expert, I probably didn't do it in the best way possible (using Oracle best practices), because at the current time, this project is my first contact with Oracle Cloud. So here is how it was done: 
+
+### WebScrapping and Bucket Store
+
+As I didn't have a provider for Football data, I choose to do it in the hard way, using WebScrapping tools. The code is responsible scrpaping site data and save on OCI Bucket Store.
+
+
 
 1. Football Data Collection: Data is collected by a Python script.
 This script is responsible for extracting the relevant data necessary for the analysis.
@@ -104,4 +110,7 @@ I really liked to use Oracle Cloud, if you already know Cloud from other company
 
 KIMBALL, R. The Kimball Group reader : relentlessly practical tools for data warehousing and business intelligence : remastered collection. Indianapolis, Indiana: Wiley, 2016.
 
+
+<oracle-dv project-path="/@Catalog/users/matheusskempa@hotmail.com/DashBoard FuteLab" active-page="insight" active-tab-id="snapshot!canvas!1">
+</oracle-dv>
 ‌
