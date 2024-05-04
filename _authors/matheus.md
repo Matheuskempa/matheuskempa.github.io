@@ -107,7 +107,7 @@ image: curriculum.jpg
 # Education
 
 **Nanodegree Course. Data Scientist**
-    <font color='blue'>Udacity)</font>
+    <font color='blue'>Udacity</font>
     > Period: May 2020 – Set 2020
 
 **Postgraduate Course. Financial Management**
@@ -135,10 +135,6 @@ image: curriculum.jpg
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2eaf9660-9d78-4b01-9b96-6ab7b8de8623" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
----
-**Nanodegree Data Science** 
-    <font color='blue'>Udacity</font>
-    > Period: Ago 2020
 
 ---
 

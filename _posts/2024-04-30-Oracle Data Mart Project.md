@@ -33,9 +33,6 @@ Star schema modeling is a popular technique used in data warehouse design. It in
 So This BI project aims to Brazilian Football Championship and the goal is to collect, process and visualize relevant data to provide valuable insights into the championship.
 The project will cover since the creation of the Data Mart, to the ETL and the creation of the Dashboards to reflect the data.
 
-
-<!-- ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9) -->
-
 <img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9" alt="Resume" style="width:800px;"/>
 
 
