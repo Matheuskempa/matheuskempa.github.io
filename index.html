@@ -2,7 +2,7 @@
 layout: page
 title: Home
 subtitle: Always Leaning
-image: data.gif 
+image: main_page.gif 
 ---
  
 {% for post in site.posts %}
@@ -14,6 +14,9 @@ image: data.gif
                 <!-- {{ post.excerpt }}             -->
             </h2>
         </a>
+        <span class="post-subtitle" >
+            {{ post.subtitle }}
+        </span>
   
   <p class="post-meta">Posted by {{ post.name_displayed }} on {{ post.date | date: "%-d/%m/%Y" }}</p>
 
