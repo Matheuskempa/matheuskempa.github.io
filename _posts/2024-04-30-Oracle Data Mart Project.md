@@ -2,21 +2,51 @@
 layout: post
 author: matheus
 name_displayed: Matheus Kempa
-image: oracle.png
+image: oracle_theme.png
+subtitle: A real-life Data Mart project utilizing Oracle Cloud Infrastructure and Analytics.
 ---
 
-# DataMart Project on Oracle Cloud
+#### Table of Contents
 
-This is the first post of this blog and this post will be dedicated to one BI project and we are going to use Oracle Cloud Infrastructure (OCI). Since this is a blog post and not an academic paper, the main focus it will be "delivery good content with good and real projects" always with emphasis ont practice part. The theory behind will also be covered and the references will be shown at the end of the post. Without further ado let's dive in the concepts that are necessary to understand this Project. 
+1. [Introduction](#introduction)
+    - [Business Intelligence](#business-intelligence)
+    - [Data Warehouse and DataMart](#data-warehouse-and-datamart)
+        - [Star Schema Modeling](#star-schema-modeling)
+2. [Project](#project)
+    - [Architecture](#architecture)
+    - [Web Scraping](#web-scraping)
+    - [Bucket Store](#bucket-store)
+    - [Data Mart](#data-mart)
+        - [DataMart Modeling](#datamart-architecture-modeling)
+        - [Historical Data](#historical-data)
+        - [Scheduling](#scheduling)
+    - [Analytics](#analytics)
+3. [Conclusions](#conclusions)
+4. [References](#references)
 
-## Concepts
+
+<br>
+
+---
+
+## Introduction
+
+This is the first post of the blog, dedicated to a Business Intelligence project on Oracle Cloud. As it's a blog post rather than an academic paper, the primary focus will be on delivering valuable content and showcasing real-life projects.
+
+At the beginning of my career, I used to perceive BI as simply dashboards and panels, but I've come to realize that this is just the tip of the iceberg. There's a lot more beneath those beautiful dashboards that we see. While many people nowadays have a deep understanding of BI, some still believe it's just a matter of 'plugging' BI into the database and creating visualizations.
+
+Created in the 1960s Business Intelligence ***(BI)*** lays on the premise of deliverying information to support better decision making.
+In order to achive that BI systems often involve data warehousing, data mining, reporting, and data visualization, all this combined to help turn raw data into insights with speed.
+
+ 
 
 ### Business Intelligence
 
 Created in the 1960s Business Intelligence ***(BI)*** lays on the premise of deliverying information to support better decision making.
-In order to achive that BI systems often involve data warehousing, data mining, reporting, and data visualization, all this combined to help turn raw data into insights with certain speed.
+In order to achive that BI systems often involve data warehousing, data mining, reporting, and data visualization, all this combined to help turn raw data into insights with speed.
 
-At the beginning of my career, I used to perceive BI as simply dashboards and panels, but I've come to realize that this is just the tip of the iceberg. There's a lot more beneath those beautiful dashboards that we see. While many people nowadays have a deep understanding of BI, some still believe it's just a matter of 'plugging' BI into the database and creating visualizations. I recently encountered this issue when a colleague created an excellent dashboard using several data sources. However, we couldn't deploy it to the production environment because the data source was too large for Microsoft Power BI to import. Even when we tried using Direct Query mode, the data source was still too large, preventing us from loading it onto the production server.
+At the beginning of my career, I used to perceive BI as simply dashboards and panels, but I've come to realize that this is just the tip of the iceberg. There's a lot more beneath those beautiful dashboards that we see. While many people nowadays have a deep understanding of BI, some still believe it's just a matter of 'plugging' BI into the database and creating visualizations. 
+
 
 ### Data Warehouse and DataMart
 
@@ -28,7 +58,7 @@ A data mart, on the other hand, is a subset of a data warehouse that is focused 
 
 Star schema modeling is a popular technique used in data warehouse design. It involves organizing data into a central "fact" table surrounded by multiple "dimension" tables. The fact table contains numerical measures or metrics that represent business events (e.g., sales transactions), while the dimension tables contain descriptive attributes that provide context to the measures (e.g., customer, product, time). This star schema structure simplifies querying and analysis by enabling users to easily navigate and aggregate data along different dimensions.
 
-## Project Resume
+## Project
 
 So This BI project aims to Brazilian Football Championship and the goal is to collect, process and visualize relevant data to provide valuable insights into the championship.
 The project will cover since the creation of the Data Mart, to the ETL and the creation of the Dashboards to reflect the data.
@@ -36,19 +66,17 @@ The project will cover since the creation of the Data Mart, to the ETL and the c
 <img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9" alt="Resume" style="width:800px;"/>
 
 
-## Architecture
+### Architecture
 
 The architecture consists of four parts:
 
 1. **Web Scraping**
 2. **Bucket Store**
-3. **Data Warehouse**
+3. **Data Mart**
 4. **Analytics**
 
 As shown in the image below:
 
-
-<!-- ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68) -->
 
 <img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a7d1c2a2-569d-4727-a36a-8744cfcb0d68" alt="Resume" style="width:800px;"/>
 
@@ -61,7 +89,6 @@ Now let's delve deeper into this architecture and explain the entire Extraction,
 As I didn't have a provider for Football data, I choose to do it in the hard way, using WebScrapping tools. The code is responsible scrpaping site data and save on OCI Bucket Store.
 
 
-
 1. Football Data Collection: Data is collected by a Python script.
 This script is responsible for extracting the relevant data necessary for the analysis.
 2. Data Writing: After collection, the data is written to a Bucket in Oracle Cloud Infrastructure (OCI).
@@ -71,35 +98,33 @@ This script is responsible for extracting the relevant data necessary for the an
 * Finally, the FACT table is loaded.
 This entire ETL process was carried out using Oracle's Autonomous Data Warehouse.
 
-### Load History:
+### Bucket Store
+
+(...)
+
+### Data Mart
+
+(...)
+
+#### History Data:
 The historical data load was done for the following years 2019,2020,2021,2022,2023.
 
-### Scheduling:
+#### Scheduling:
 For the 2024 games, a routine was instantiated in the scheduler to automate the entire ETL process. This ensures that data is updated regularly and is always available for analysis.
 
-### Data Consumption:
-After the ETL process is complete, the data is consumed by reports. These reports are designed to provide a clear and understandable view of data, allowing for effective analysis.
 
-
-
-### Modeling DataMart Architecture
+#### Modeling DataMart Architecture
 
 The modeling was developed following the proposed by Ralph Kimball, the Star-Schema model.
 
-
-<!-- ![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031) -->
 
 <img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/f7dafba5-1e2a-4a2d-84b9-576874d33031" alt="Resume" style="width:800px;"/>
 
 
 
-## Sample Dashboard
+## Analytics
 
 This Dashboard were created using Oracle Cloud Anlytics , (...)
-
-<!-- {:refdef: style="text-align: center;"}
-![image](https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e)
-{: refdef} -->
 
 <img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/103e857e-1c2a-4d12-a115-dbb46e39974e" alt="Resume" style="width:800px;"/>
 
@@ -110,9 +135,5 @@ I really liked to use Oracle Cloud, if you already know Cloud from other company
 
 ## Referential
 
-KIMBALL, R. The Kimball Group reader : relentlessly practical tools for data warehousing and business intelligence : remastered collection. Indianapolis, Indiana: Wiley, 2016.
+[1] KIMBALL, R. The Kimball Group reader : relentlessly practical tools for data warehousing and business intelligence : remastered collection. Indianapolis, Indiana: Wiley, 2016.
 
-
-<oracle-dv project-path="/@Catalog/users/matheusskempa@hotmail.com/DashBoard FuteLab" active-page="insight" active-tab-id="snapshot!canvas!1">
-</oracle-dv>
-‌
