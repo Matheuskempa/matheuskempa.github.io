@@ -305,7 +305,7 @@ After all the ETL process, it's easy to create dashboards. Here's a sample that 
 
 I really liked using Oracle Cloud. If you're already familiar with cloud platforms from other companies like Amazon, Google, or Microsoft, I think it'll be easy to deploy and create your own applications there. Otherwise, I believe it's better to find a minimal course to guide you through your first steps.
 
-I encourage you to think of a real project and try to deploy it there, as you have 30 with credits to use. It was an amazing experience for me! I learned a lot about PL/SQL, OCI, and OCA. I also found some amazing features within the Oracle Autonomous Database that I will discuss in future posts.
+I encourage you to think of a real project and try to deploy it there, as you have 30 days with credits to use for free. It was an amazing experience for me! I learned a lot about PL/SQL, OCI, and OCA. I also found some amazing features within the Oracle Autonomous Database that I will discuss in future posts.
 
 ---
 
