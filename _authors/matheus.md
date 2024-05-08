@@ -105,7 +105,7 @@ image: daily_work.jpg
 **Intern**
 
 
-> Period: May 2019 – August 2019 <br clear="left"/>
+> Period: December 2015 – January 2019 <br clear="left"/>
 🌎Brasília,Brazil
 
 - Support the commercial area, creating presentations and treating data (Access,Excel); 
