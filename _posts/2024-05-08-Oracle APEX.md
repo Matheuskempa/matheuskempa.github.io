@@ -53,4 +53,4 @@ One point that is very good to know is that there is no complex pricing associat
 
 ## Project 
 
-After clarifying all the summary aspects of Apex, we can proceed to create some real applications there and see its true value.
+After clarifying all the summary aspects of Apex, we can proceed to create some real applications there and see its true value. For this project the objetive is to understand
