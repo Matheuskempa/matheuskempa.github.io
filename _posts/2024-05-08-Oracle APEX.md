@@ -20,7 +20,7 @@ subtitle: A real-life APEX project utilizing Oracle Cloud.
 ## Introduction
 
 
-The entire industry is having extensive discussions about the future of coding. Many people believe that in the future, coding may no longer be necessary TechRadar. Although I do not fully agree with this perspective, I genuinely think low-code applications have several benefits.
+The entire industry is having extensive discussions about the future of coding. Many people believe that in the future, coding may no longer be essential ([Nvidia’s CEO On The Democratization Of Coding - Forbes](https://www.forbes.com/sites/timbajarin/2024/03/20/nvidias-ceo-on-the-democratization-of-coding/?sh=7bb77ad7a95a)). Although I do not fully agree with this perspective (at least for now), I genuinely believe that low-code applications have several benefits, especially for medium or small applications. I really believe they will gain much more prominence in the future.
 
 Indeed, we developers need to recognize the value of low-code applications today and acknowledge that there are several advantages over coded platforms:
 
