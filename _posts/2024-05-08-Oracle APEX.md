@@ -68,3 +68,19 @@ SQL Workshop, as the name suggests, is a place where you can perform many SQL op
 
 *Observation:* I really enjoyed writting on *Quick SQL*, it sort of a new way of writting fast SQL statements. It works just like a code generator SQL, and in my opinion it's a very good PL/SQL engine. 
 
+**App Builder**
+
+There is multiple concepts inside App builder.
+
+* Apex Application
+
+Is a collection of pages linked together usgin navigation menus, tabs, buttons and hiperlinks. Basically a HTML interface that exists on top of database objects such as tables and procedures. 
+
+* Application Page
+
+Every application consists of one or more pages and a page is the basic building block of an application. In order to view a rendered version of your application, is necessary to submit it to Oracle Apex engine. 
+
+* Application User interface
+* Sessions State
+* Page Processing and Page Rendering
+* Application URL Syntax
