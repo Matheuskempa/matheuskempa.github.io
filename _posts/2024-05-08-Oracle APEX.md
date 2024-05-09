@@ -11,6 +11,7 @@ subtitle: A real-life APEX project utilizing Oracle Cloud.
 1. [Introduction](#introduction)
     - [Apex](#apex)
 2. [Project](#project)
+    - [Learning Path](#learning-path)
 
 
 <br>
@@ -20,7 +21,7 @@ subtitle: A real-life APEX project utilizing Oracle Cloud.
 ## Introduction
 
 
-The entire industry is having extensive discussions about the future of coding. Many people believe that in the future, coding may no longer be essential ([Nvidia’s CEO On The Democratization Of Coding - Forbes](https://www.forbes.com/sites/timbajarin/2024/03/20/nvidias-ceo-on-the-democratization-of-coding/?sh=7bb77ad7a95a)). Although I do not fully agree with this perspective (at least for now), I genuinely believe that low-code applications have several benefits, especially for medium or small applications. I really believe they will gain much more prominence in the future.
+The entire industry is having extensive discussions about the future of coding. Many people believe that in the future, coding may no longer be essential ([Nvidia’s CEO On The Democratization Of Coding - Forbes](https://www.forbes.com/sites/timbajarin/2024/03/20/nvidias-ceo-on-the-democratization-of-coding/?sh=7bb77ad7a95a)). Although I do not fully agree with this perspective (at least for now), I genuinely believe that low-code applications have several benefits, especially for medium or small projects. I really believe they will gain much more prominence in the future.
 
 Indeed, we developers need to recognize the value of low-code applications today and acknowledge that there are several advantages over coded platforms:
 
@@ -45,12 +46,23 @@ Nowadays Apex is used for:
 
 Talking a little about it's caracteristics. It's important to know that Apex does not require any client software, the App development IDE is a web browser, there is no code generation, all the app definitions are stored in databases as metadata, and all the data is processed in the database.
 
-Oracle Apex Infraesctruture is a fully supported no-cost feature of Oracle Autonomous Database and all Oracle Database Distribuitions and Editions, either on premises, either on cloud. On autonomous Database, Oracle Apex provides a pre-configured, fully managed and secured environmnent to both develop and deploy applications. And it's architecture is composed as described in the image bellow:
+Oracle Apex Infraesctruture is a fully supported no-cost feature of Oracle Autonomous Database and all Oracle Database Distribuitions and Editions. On autonomous Database, Oracle Apex provides a pre-configured, fully managed and secured environmnent to both develop and deploy applications. And it's architecture is composed as described in the image bellow:
 
 <img class="img-fluid" src="/./assets/images/apex_architecture.png" alt="Resume" style="width:800px;"/>
 
 One point that is very good to know is that there is no complex pricing associated with the number of developers that are using Apex or the number of applications and it can be deployed wherever Oracle Database runs, be it on the cloud, dedicated region, third party, or on premises.
 
+After clarifying all the summary aspects of Apex, we can proceed to create some real applications there and see its true value. 
+
 ## Project 
 
-After clarifying all the summary aspects of Apex, we can proceed to create some real applications there and see its true value. For this project the objetive is to understand
+For this project, the objective is to understand all the functionalities of Oracle Apex. For that, we are going to complete the entire [Oracle learning path](https://mylearn.oracle.com/ou/course/oracle-apex-developer-professional/),and afterwards, I will create my own application. I won’t post the training step-by-step that I’ve done, because the purpose is to highlight it's best features and the most crucial points.
+
+The first point is the creation of the Environment. Since I already have an Autonomous Database created, my Apex Environment was almost ready to start. 
+
+**SQL Workshop**
+
+<img class="img-fluid" src="/./assets/images/apex_sql_workshop.png" alt="Apex SQL Workshop" style="width:800px;"/>
+
+SQL Workshop, as the name suggests, is a place where you can perform various SQL operations on your database. You will be able to run scripts, create procedures, create packages, create views as if you were in Oracle SQL Developer. For those who like coding (like me), you will feel at home (low code does not mean no code). One thing I would like to emphasize is that even though you don’t really need to know coding itself, knowledge of databases and the principles of ETLs, and basic PL/SQL is still required. Otherwise, you might end up messing things up and not creating good content there.
+
