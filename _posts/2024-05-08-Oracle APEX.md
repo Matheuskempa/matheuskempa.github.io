@@ -56,11 +56,11 @@ After clarifying all the summary aspects of Apex, we can proceed to create some 
 
 ## Project 
 
-For this project, the objective is to understand all the functionalities of Oracle Apex. For that, I am going to complete the entire [Oracle learning path](https://mylearn.oracle.com/ou/course/oracle-apex-developer-professional/),and afterwards, I will create my own application. I won’t post the training path step-by-step, because the purpose is to highlight it's best features and the most important content there.
+For this project, the objective is to study Oracle Apex. For that, I am going to complete the entire [Oracle learning path](https://mylearn.oracle.com/ou/course/oracle-apex-developer-professional/), and afterwards, I will create my own application. I won’t post the training path step-by-step, because the purpose is to highlight it's best features and the most important content.
 
 First of all, the creation of the Environment is necessary. Since I already have an Autonomous Database created, my Apex Environment was almost ready to start. But I still needed to create my own APEX workspace name, workspace user and workspace password. 
 
-**SQL Workshop**
+### SQL Workshop
 
 <img class="img-fluid" src="/./assets/images/apex_sql_workshop.png" alt="Apex SQL Workshop" style="width:800px;"/>
 
@@ -68,19 +68,52 @@ SQL Workshop, as the name suggests, is a place where you can perform many SQL op
 
 *Observation:* I really enjoyed writting on *Quick SQL*, it sort of a new way of writting fast SQL statements. It works just like a code generator SQL, and in my opinion it's a very good PL/SQL engine. 
 
-**App Builder**
+### App Builder
 
-There is multiple concepts inside App builder.
+There are multiple concepts inside the App Builder.
 
-* Apex Application
+**Apex Application**
 
-Is a collection of pages linked together usgin navigation menus, tabs, buttons and hiperlinks. Basically a HTML interface that exists on top of database objects such as tables and procedures. 
+An Apex Application is a collection of pages linked together using navigation menus, tabs, buttons, and hyperlinks. Essentially, it is an HTML interface built on top of database objects such as tables and procedures.
 
-* Application Page
+**Application Page**
 
-Every application consists of one or more pages and a page is the basic building block of an application. In order to view a rendered version of your application, is necessary to submit it to Oracle Apex engine. 
+Every application consists of one or more pages, and a page is the basic building block of an application. To view a rendered version of your application, it is necessary to submit it to the Oracle Apex engine. 
 
-* Application User interface
-* Sessions State
-* Page Processing and Page Rendering
-* Application URL Syntax
+These pages can include application logic. It is also possible to branch from one page to another using conditional navigation. Inside a page, you can perform calculations, validations, and display reports, calendars, and charts.
+
+Important to know that individual pages are organized using containers called regions.
+
+**Application User Interface**
+
+It is possible to build a responsive app that is highly accessible, easy to customize, and easy to maintain.
+
+Key advantages:
+```
+> Responsive Design 
+> Versatile User Interface
+> Easy Customization
+```
+
+
+**Session State Management**
+
+A session is a logical construct that establishes persistence across page views.
+
+Session states enable developers to store and retrieve values for a user as the user navigates between different application pages. It can maintain session state and provide developers with the ability to get and set session state values from any page in the application.
+
+Each session is assigned a unique identifier or Session ID.
+
+Session ID is a unique number assigned to a specific user for the duration of that user's visit. The engine establishes the identity of the user for each page request and uses the session ID to fetch session state from the database. The session ID is visible in the URL for a page requested.
+
+**Page Processing and Page Rendering**
+
+The Apex engine renders and processes pages relying on two processes.
+- **Show page** is the process that renders and assembles all the page attributes into a viewable HTML page.
+- **Accept Page** performs page processing, including computations, validations, processes, and branching.
+
+It's also possible to use conditions in an application to control how pages and page components display and when processes, computations, and validations execute.
+
+**Application URL Syntax**
+
+It supports two types of URL syntax: Friendly and f?p Syntax. Applications created using Apex release 20.1 or later use Friendly Syntax, and it's also possible to change existing applications by editing the Friendly URLs attribute in the application definition.
