@@ -11,7 +11,7 @@ subtitle: A real-life APEX project utilizing Oracle Cloud.
 1. [Introduction](#introduction)
     - [Apex](#apex)
 2. [Project](#project)
-    - [Learning Path](#learning-path)
+
 
 
 <br>
@@ -56,13 +56,15 @@ After clarifying all the summary aspects of Apex, we can proceed to create some 
 
 ## Project 
 
-For this project, the objective is to understand all the functionalities of Oracle Apex. For that, we are going to complete the entire [Oracle learning path](https://mylearn.oracle.com/ou/course/oracle-apex-developer-professional/),and afterwards, I will create my own application. I won’t post the training step-by-step that I’ve done, because the purpose is to highlight it's best features and the most crucial points.
+For this project, the objective is to understand all the functionalities of Oracle Apex. For that, I am going to complete the entire [Oracle learning path](https://mylearn.oracle.com/ou/course/oracle-apex-developer-professional/),and afterwards, I will create my own application. I won’t post the training path step-by-step, because the purpose is to highlight it's best features and the most important content there.
 
-The first point is the creation of the Environment. Since I already have an Autonomous Database created, my Apex Environment was almost ready to start. 
+First of all, the creation of the Environment is necessary. Since I already have an Autonomous Database created, my Apex Environment was almost ready to start. But I still needed to create my own APEX workspace name, workspace user and workspace password. 
 
 **SQL Workshop**
 
 <img class="img-fluid" src="/./assets/images/apex_sql_workshop.png" alt="Apex SQL Workshop" style="width:800px;"/>
 
-SQL Workshop, as the name suggests, is a place where you can perform various SQL operations on your database. You will be able to run scripts, create procedures, create packages, create views as if you were in Oracle SQL Developer. For those who like coding (like me), you will feel at home (low code does not mean no code). One thing I would like to emphasize is that even though you don’t really need to know coding itself, knowledge of databases and the principles of ETLs, and basic PL/SQL is still required. Otherwise, you might end up messing things up and not creating good content there.
+SQL Workshop, as the name suggests, is a place where you can perform many SQL operations on your database. You will be able to run scripts, create procedures, create packages, create views as if you were in Oracle SQL Developer. For those who like coding (like me), you will feel at home (*low code does not mean no code*). One thing I would like to emphasize is that even though you don’t really need to know coding itself, knowledge of databases and the principles of ETLs, and basic PL/SQL is still required. Otherwise, you might end up messing things up and not creating good content there.
+
+*Observation:* I really enjoyed writting on *Quick SQL*, it sort of a new way of writting fast SQL statements. It works just like a code generator SQL, and in my opinion it's a very good PL/SQL engine. 
 
