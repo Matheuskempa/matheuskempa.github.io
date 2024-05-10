@@ -117,3 +117,21 @@ It's also possible to use conditions in an application to control how pages and 
 **Application URL Syntax**
 
 It supports two types of URL syntax: Friendly and f?p Syntax. Applications created using Apex release 20.1 or later use Friendly Syntax, and it's also possible to change existing applications by editing the Friendly URLs attribute in the application definition.
+
+
+### First Impression
+
+At first I had underestimated Oracle Apex but as I began to explore and discover existing projects, I quickly realized that I've made a mistake. I was really (really) impressed! With Apex, you can develop not just medium-sized systems, but huge ones as well. These are systems that would ordinarily require a significant amount of time to build. 
+
+owever, on the other hand, it is necessary to study its functionalities. It's not merely a matter of drag and drop if you want to develop great systems. That said, if you're looking for something more casual, it's impressive how quickly you can deploy it.
+
+I still did not finish the Oracle learning path, but I've already decided what applications I will create for this post:
+
+1. Detailed Information of a player.
+
+This systems actually is a continuation of the last post where I created a DataMart in Oracle Cloud. The ideia here is to create a system that I can add a photo of a match, or a player of a player, also that has a page where we can see all the some features of the players, his photo and also a little about his perfomance.
+
+2. A blog system.
+
+I saw one video of a Oracle developer saying his blog has been create in Apex, I found a very interesting ideia. So I will try to replicate this blog over there (I don't think it's going to be an easy task this one, because i will try to keep the same format).
+
