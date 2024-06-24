@@ -45,7 +45,7 @@ Star schema modeling is a popular technique used in data warehouse design. It in
 
 ## Project
 
-I created this project for a selection process I was participating in at Oracle. As I had not worked with Oracle until now, I didn't use some specific tools like Oracle Data Integration, as I am not familiar with them. So, I went for the traditional way, coding in PL/SQL, taking advantage of the fact that I have a good background in SQL with T-SQL and PL/pgSQL. Here is the full documentation of the [project](https://github.com/Matheuskempa/matheuskempa.github.io/assets/documents/DOCUMENTACAO_TECNICA.pdf).
+I created this project for a selection process I was participating in at Oracle. As I had not worked with Oracle until now, I didn't use some specific tools like Oracle Data Integration, as I am not familiar with them. So, I went for the traditional way, coding in PL/SQL, taking advantage of the fact that I have a good background in SQL with T-SQL and PL/pgSQL. Here is the full documentation of the [project](https://github.com/Matheuskempa/matheuskempa.github.io/blob/feat/oracle_apex/assets/documents/DOCUMENTACAO_TECNICA.pdf).
 
 This BI project aims to utilize Brazilian Football Championship data with the goal of collecting, processing, and visualizing relevant data to provide valuable insights into the championship.
 
