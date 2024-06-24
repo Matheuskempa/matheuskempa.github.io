@@ -4,6 +4,7 @@ author: matheus
 name_displayed: Matheus Kempa
 image: oracle_theme.png
 subtitle: A real-life Data Mart project utilizing Oracle Cloud Infrastructure and Analytics.
+language_tag: EN 
 ---
 
 #### Table of Contents
