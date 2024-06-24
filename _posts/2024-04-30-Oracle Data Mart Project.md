@@ -4,6 +4,7 @@ author: matheus
 name_displayed: Matheus Kempa
 image: oracle_theme.png
 subtitle: A real-life Data Mart project utilizing Oracle Cloud Infrastructure and Analytics.
+language_tag: EN 
 ---
 
 #### Table of Contents
@@ -44,11 +45,14 @@ Star schema modeling is a popular technique used in data warehouse design. It in
 
 ## Project
 
+I created this project for a selection process I was participating in at Oracle. As I had not worked with Oracle until now, I didn't use some specific tools like Oracle Data Integration, as I am not familiar with them. So, I went for the traditional way, coding in PL/SQL, taking advantage of the fact that I have a good background in SQL with T-SQL and PL/pgSQL. Here is the full documentation of the [project](https://github.com/Matheuskempa/matheuskempa.github.io/assets/documents/DOCUMENTACAO_TECNICA.pdf).
+
 This BI project aims to utilize Brazilian Football Championship data with the goal of collecting, processing, and visualizing relevant data to provide valuable insights into the championship.
 
 The project will cover everything from the creation of the Data Mart to the ETL process and the creation of dashboards to reflect the data.
 
 <img class="img-fluid" src="https://github.com/Matheuskempa/matheuskempa.github.io/assets/31332829/a35d345a-ff83-4c76-b177-baf3b1b99bb9" alt="Resume" style="width:800px;"/>
+
 
 
 
@@ -305,7 +309,7 @@ After all the ETL process, it's easy to create dashboards. Here's a sample that 
 
 I really liked using Oracle Cloud. If you're already familiar with cloud platforms from other companies like Amazon, Google, or Microsoft, I think it'll be easy to deploy and create your own applications there. Otherwise, I believe it's better to find a minimal course to guide you through your first steps.
 
-I encourage you to think of a real project and try to deploy it there, as you have 30 with credits to use. It was an amazing experience for me! I learned a lot about PL/SQL, OCI, and OCA. I also found some amazing features within the Oracle Autonomous Database that I will discuss in future posts.
+I encourage you to think of a real project and try to deploy it there, as you have 30 days with credits to use. It was an amazing experience for me! I learned a lot about PL/SQL, OCI, and OCA. I also found some amazing features within the Oracle Autonomous Database that I will discuss in future posts.
 
 ---
 
