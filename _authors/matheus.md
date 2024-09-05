@@ -141,6 +141,8 @@ image: daily_work.jpg
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="84226b6e-0586-4685-ae9d-99711a7290f6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> 
 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5fd79367-29f1-49fb-a7a3-472424620018" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f44353cf-8fc0-4110-aafd-7bcc9b579082" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1586a86c-9be5-424e-a138-0b5fad28d9e5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
