@@ -23,7 +23,6 @@ language_tag: EN
 
 ## Introduction
 
-Esse projeto foi um projeto
 
 ## Project
 
