@@ -43,9 +43,9 @@ image: daily_work.jpg
 
 <br clear="left"/>
 
-**Data Engineer/ Cientist (Variable Income)**
+**Data Engineer**
 
-> Period: April 2021 – June 2022   <br clear="left"/>
+> Period: April 2021 – August 2022   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Management tools for obtaining, transforming, loading, serving and visualizing data 
@@ -140,6 +140,8 @@ image: daily_work.jpg
 
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="84226b6e-0586-4685-ae9d-99711a7290f6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> 
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5fd79367-29f1-49fb-a7a3-472424620018" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f44353cf-8fc0-4110-aafd-7bcc9b579082" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
