@@ -22,7 +22,7 @@ image: daily_work.jpg
 <img src="../assets/images/brbcard.png" align="left" width="200px"/>
 <br clear="left"/>
 
-**Senior Data Engineer**
+**Data Engineer**
  
 > Period: June 2022 – Today   <br clear="left"/>
 🌎Brasília,Brazil
