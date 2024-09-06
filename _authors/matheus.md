@@ -43,9 +43,9 @@ image: daily_work.jpg
 
 <br clear="left"/>
 
-**Data Engineer/ Cientist (Variable Income)**
+**Data Engineer**
 
-> Period: April 2021 – June 2022   <br clear="left"/>
+> Period: April 2021 – August 2022   <br clear="left"/>
 🌎Brasília,Brazil
 
 - Management tools for obtaining, transforming, loading, serving and visualizing data 
