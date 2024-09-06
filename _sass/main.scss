@@ -10800,3 +10800,86 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+
+
+.newsletter-container {
+  max-width: 1400px;
+  max-height: 100%;
+  border-radius: 1.2em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em;
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0em;
+  text-align: center;
+  justify-content: center;  /* Alinha horizontalmente */
+  align-items: center;  /* Alinha verticalmente */
+}
+
+.newsletter-title {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* Utilize a mesma fonte do restante do template */
+  font-size: 1em; /* Ajuste o tamanho da fonte */
+  font-weight: 600; /* Harmonize o peso da fonte com o design geral */
+  color: #333;
+  margin-bottom: 0.5em;
+  // text-transform: uppercase;
+}
+
+.newsletter-text {
+  font-size: 1.2em;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: #555;
+  margin-bottom: 1.2em;
+}
+
+.newsletter-email {
+  font-family: 'Lato', sans-serif; /* Utilize a mesma fonte do restante do template */
+  font-size: 1em; /* Ajuste o tamanho da fonte */
+  font-weight: 600; /* Harmonize o peso da fonte com o design geral */
+  width: 50%;
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  
+  &:focus {
+    border-color: #0d6efd;
+    background-color: #fff;
+  }
+}
+
+.newsletter-submit {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* Utilize a mesma fonte do restante do template */
+  font-size: 1em; /* Ajuste o tamanho da fonte */
+  font-weight: 600; /* Harmonize o peso da fonte com o design geral */
+  padding: 0.6em 1.2em;
+  border-radius: 0.5em;
+  background-color: #565e64;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0c4128;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .newsletter-title {
+    font-size: 1.5em !important;
+    color: #000 !important;
+    margin-bottom: 1em !important;
+  }
+
+  .newsletter-text {
+    font-size: 1em;
+  }
+
+  .newsletter-submit {
+    font-size: 1.1em;
+  }
+}
