@@ -92,7 +92,23 @@ In our code, we utilize a library called PDFkit, which internally leverages wkht
 
 Here is our final PDF, already rendered! Take a look:
 
-<object data="{{ site.url }}{{ site.baseurl }}/assets/documents/historico_fatura_123456.pdf" width="700" height="1000" type="application/pdf"></object>
+<style>
+  .responsive-object {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  }
+
+  @media (max-width: 768px) {
+    .responsive-object {
+      height: 80vh; /* Reduce height for smaller screens */
+    }
+  }
+</style>
+
+<object data="{{ site.url }}{{ site.baseurl }}/assets/documents/historico_fatura_123456.pdf" 
+        class="responsive-object" 
+        type="application/pdf">
+</object>
 
 Jinja is widely used, so understanding how it works can be incredibly valuable! It opens up many possibilities for various tasks. I hope this project provided valuable insights, and I genuinely hope you enjoyed the post! For further exploration, I recommend diving into the documentation and references mentioned above. You’ll find all the code in my GitHub repository. Looking forward to seeing you in the next post!
 
