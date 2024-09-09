@@ -71,10 +71,69 @@ template = Template("<h1>Hello my friend, My name is {{ nome }}!</h1>")
 output = template.render(nome="Bob")
 
 print(output)
+```
+***Output***
+``` python
 <h1>Olá, Mundo!</h1>
 ```
 
-Simple as that, but in our case, we’ve created numerous variables within the HTML. Now the task at hand is to pass the values for all those variables, and once that’s done, we’re good to go!
+Simple as that, but in our case, we’ve created numerous variables within the HTML. Now the task at hand is to pass the values for all those variables, and once that’s done, we’re good to go! 
+
+For passing data through a pandas DataFrame, you should follow the example below exactly:
+
+<style>
+pre code {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    overflow-x: auto;
+}
+
+pre code .keyword {
+    color: #569cd6;
+}
+
+pre code .string {
+    color: #ce9178;
+}
+
+pre code .comment {
+    color: #6a9955;
+}
+
+pre code .function {
+    color: #dcdcaa;
+}
+</style>
+
+```python
+from jinja2 import Template
+import pandas as pd
+
+data = {'Coluna': ['Linha 1', 'Linha 2', 'Linha 3']}
+df = pd.DataFrame(data)
+
+template_str = """
+{% for linha in dataframe['Coluna'] %}
+   <h1> {{ linha }} </h1>
+{% endfor %}
+"""
+
+template = Template(template_str)
+rendered = template.render(dataframe=df)
+print(rendered)
+```
+***Output***
+```python
+<h1> Linha 1 </h1>
+<h1> Linha 2 </h1>
+<h1> Linha 3 </h1>
+```
+
+
+
 
 The full repo to run this code is [here](https://github.com/Matheuskempa/bills_repo).
 
@@ -110,7 +169,7 @@ Here is our final PDF, already rendered! Take a look:
         type="application/pdf">
 </object>
 
-Jinja is widely used, so understanding how it works can be incredibly valuable! It opens up many possibilities for various tasks. I hope this project provided valuable insights, and I genuinely hope you enjoyed the post! For further exploration, I recommend diving into the documentation and references mentioned above. You’ll find all the code in my GitHub repository. Looking forward to seeing you in the next post!
+Jinja is widely used, so understanding how it works can be incredibly valuable! It opens up many possibilities for various tasks. I hope this project provided valuable insights, and I genuinely hope you enjoyed the post! For further exploration, I recommend diving into the documentation and references mentioned below. You’ll find all the code in my GitHub repository. Looking forward to seeing you in the next post!
 
 ---
 
