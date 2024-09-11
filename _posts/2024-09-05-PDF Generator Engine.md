@@ -62,7 +62,7 @@ Now, let’s circle back to our original problem: building a PDF engine. Here’
 
 #### Code example
 
-To enable Jinja to process the code, we must pass data to it. In the case of our DataFrame, I converted it to a dictionary format. This explains the confusing logic you see inside the HTML template. Specifically, I designed a mechanism in my Python code that breaks down the DataFrame into manageable chunks—each representing a page—and delivers only the relevant dictionary data to Jinja. Now, how do we deliver this information to Jinja?
+To enable Jinja to process the code, we must pass data to it. In the case of our DataFrame, I converted it to a dictionary just because of convinience, but there wouldn't be problem on passing a dataframe directly. In my case specifically, I designed a mechanism in my Python code that breaks down the DataFrame into manageable chunks—each representing a page—and delivers only the relevant dictionary data to Jinja, (annoying logic haha).  So make it simple, how do we deliver this information to Jinja? Just like this:
 
 ```python
 from jinja2 import Template
@@ -116,9 +116,11 @@ data = {'Coluna': ['Linha 1', 'Linha 2', 'Linha 3']}
 df = pd.DataFrame(data)
 
 template_str = """
+{% raw %}
 {% for linha in dataframe['Coluna'] %}
-   <h1> {{ linha }} </h1>
+  <h1> {{ linha }} </h1>
 {% endfor %}
+{% endraw %}
 """
 
 template = Template(template_str)
