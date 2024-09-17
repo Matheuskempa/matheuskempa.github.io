@@ -31,9 +31,6 @@ language_tag: EN
 ### Glue
 
 
-### Jinja
-
-
 #### Glue MetaData
 
 
