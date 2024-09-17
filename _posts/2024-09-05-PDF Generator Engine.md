@@ -149,7 +149,7 @@ Wkhtmltopdf and wkhtmltoimage are open-source (LGPLv3) command-line tools that r
 In our code, we utilize a library called PDFkit, which internally leverages wkhtmltopdf. I’ve already included the executable in the folder, but if you’re on a Linux platform, you’ll need to install Wkhtmltopdf separately. Windows users, make sure to choose the correct version for your system.
 
 
-#### Results and Conclusions
+## Results and Conclusions
 
 Here is our final PDF, already rendered! Take a look:
 
