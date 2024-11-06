@@ -51,7 +51,7 @@ Espere instalar, deve demorar alguns minutos...
 
 
 
-Agora temos que executar alguns comandos, eu separei aqui exatamente o que cada um faz:
+Após isso enfrentei alguns problemas hahaha (dois especificamente), problema de usuário sem permissão sudo e dns. Então, eu separei aqui como resolvi exatamente cada um deles:
 
 <style>
     pre {
@@ -76,9 +76,9 @@ su -
 usermod -a -G sudo vboxuser
 ```
 
-Então utilizei o método default da OracleVM e nela o user é o vboxuser e a senha é changeme, só que ele vem sem permissões, por isso temos que rodar esse comando. Após isso reinicie a VM e prossiga.
+Como utilizei o método default da OracleVM -> nela o user é o vboxuser e a senha é changeme, só que ele vem sem permissões. Por isso temos que rodar esse comando. Após isso reinicie a VM e prossiga.
 
-Tive um problema com o DNS, se você não estiver conseguindo chegar na internet então para resolver isso realizei os seguintes comandos:
+Tive um problema também com o DNS, se você não estiver conseguindo chegar na internet pela url padrão, para resolver esse problema eu realizei os seguintes comandos:
 
 ```shell
 sudo nano /etc/resolv.conf
@@ -86,7 +86,7 @@ sudo nano /etc/resolv.conf
     adicionei nameserver 8.8.8.8 dentro desse arquivo. 
 ```
 
-Talvez você não sofra esses problemas... Resolvendo esse problemas basta prosseguir:
+Talvez você não sofra esses problemas, mas caso passe por isso também basta seguir o passo a passo acima. Resolvendo esse problemas basta prosseguir:
 
 ```shell
 
