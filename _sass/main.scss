@@ -10883,3 +10883,49 @@ header.masthead .post-heading .meta a {
     font-size: 1.1em;
   }
 }
+
+  .newsletter-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .newsletter-input {
+      padding: 10px; /* Reduzido para 10px */
+      border-radius: 30px;
+      border: 2px solid #383838;
+      font-size: 14px; /* Reduzido para 14px */
+      width: 200px; /* Reduzido para 200px */
+      outline: none;
+      transition: border-color 0.3s ease;
+  }
+
+  .newsletter-input:focus {
+      border-color: #383838;
+  }
+
+  .btn-newsletter {
+      background-color: #383838;
+      color: #fff;
+      padding: 10px 20px; /* Reduzido para 10px 20px */
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px; /* Reduzido para 16px */
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(18, 18, 18, 0.3);
+      transition: all 0.3s ease;
+  }
+
+  .btn-newsletter:hover {
+      background-color: #2e895d;
+      box-shadow: 0 15px 20px rgba(32, 95, 59, 0.4);
+  }
+
+  @media (max-width: 600px) {
+      .newsletter-input {
+          width: 100%;
+      }
+  }
