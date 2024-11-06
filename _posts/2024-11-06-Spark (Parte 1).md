@@ -72,6 +72,23 @@ Agora temos que executar alguns comandos, eu separei aqui exatamente o que cada 
 
 
 ```shell
+su -
+usermod -a -G sudo vboxuser
+```
+
+Então utilizei o método default da OracleVM e nela o user é o vboxuser e a senha é changeme, só que ele vem sem permissões, por isso temos que rodar esse comando. Após isso reinicie a VM e prossiga.
+
+Tive um problema com o DNS, se você não estiver conseguindo chegar na internet então para resolver isso realizei os seguintes comandos:
+
+```shell
+sudo nano /etc/resolv.conf
+
+    adicionei nameserver 8.8.8.8 dentro desse arquivo. 
+```
+
+Talvez você não sofra esses problemas... Resolvendo esse problemas basta prosseguir:
+
+```shell
 
 0. sudo apt update 
 
@@ -118,15 +135,33 @@ Agora temos que executar alguns comandos, eu separei aqui exatamente o que cada 
 9 start-master.sh 
 	
 	Inicializa o spark no seu computador.
+```
 
+Na etapa etapa 10, coloque a URL que aparece no master. A URL do master deve aparecer na localhost:8080:
+
+<div style="text-align: center;">
+    <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/assets/images/spark_localhost_8080.png" alt="Resume" style="width:900px;"/>
+</div>
+
+<br>
+
+```shell
 10. /opt/spark/sbin/start-slave.sh {url da master}
 
 11. pyspark
 
 	Inicializa o spark em Python.
+
 ```
 
-Na etapa etapa 10, coloque a URL que aparece no master. A URL do master deve aparecer na localhost:8080.
+
+
+Ao final ficará da seguinte forma:
+<div style="text-align: center;">
+    <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/assets/images/spark_localhost_8080_worker.png" alt="Resume" style="width:900px;"/>
+</div>
+
+<br>
 
 ## Conclusão
 
