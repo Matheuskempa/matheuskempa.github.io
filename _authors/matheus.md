@@ -54,6 +54,24 @@ image: daily_work.jpg
 - Present analysis and results through data visualization. (Power BI and MetaBase)
 
 ---
+
+<img src="../assets/images/I3GS.jpg" align="left" width="150px"/> 
+<br clear="left"/>
+
+**Data Analyst - Developer Grant**
+
+> Period: June 2020 – April 2021   <br clear="left"/>
+🌎Brasília,Brazil
+
+- Construction of Machine Learning algorithm models (Python); 
+- Process Automation (Python); 
+- Database systems management (PostgreSQL) 
+- Generate information about your potential developments, in particular, with the development of socio-environmental indicators.
+
+
+---
+
+
 <img src="../assets/images/lamfo.png" align="left" width="200px"/> 
 <br clear="left"/>
 
@@ -68,20 +86,8 @@ image: daily_work.jpg
 - Creation of Dashboards (BI): COVID-19: Previsões e Microsoft Power Bi; 
 - WebScrapping (Python); 
 - Leader of an ML project applied to sports. Machine Learning Algorithms for Football Predictions
----
 
-<img src="../assets/images/I3GS.jpg" align="left" width="150px"/> 
-<br clear="left"/>
 
-**Data Analyst - Developer Grant**
-
-> Period: June 2020 – April 2021   <br clear="left"/>
-🌎Brasília,Brazil
-
-- Construction of Machine Learning algorithm models (Python); 
-- Process Automation (Python); 
-- Database systems management (PostgreSQL) 
-- Generate information about your potential developments, in particular, with the development of socio-environmental indicators.
 
 ---
 <img src="../assets/images/logo_brasal.png" align="left" width="200px"/> 

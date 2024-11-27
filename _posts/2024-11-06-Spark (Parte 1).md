@@ -146,7 +146,7 @@ Na etapa etapa 10, coloque a URL que aparece no master. A URL do master deve apa
 <br>
 
 ```shell
-10. /opt/spark/sbin/start-slave.sh {url da master}
+10. /opt/spark/sbin/start-worker.sh {url da master}
 
 11. pyspark
 
