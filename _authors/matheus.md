@@ -122,32 +122,28 @@ image: daily_work.jpg
 ---
 
 
-# Education
 
-**MBA Course. Data Engineering**
-    <font color='blue'>FIAP</font>
-    > Period: Ago 2024 – Ago 2025
+# 🎓 Education
 
-**Postgraduate Course. Financial Management**
-    <font color='blue'>Fundação Getúlio Vargas (FGV)</font>
-    > Period: Jan 2020 – Dec 2020
 
-**BA. Network and Telecommunications Engineering**
-    <font color='blue'>University of Brasília (UnB)</font>
-    > Period: Jan 2025 – Dec 2030
 
-**BA. Business Administration**
-    <font color='blue'>University of Brasília (UnB)</font>
-    > Period: Jan 2014 – Dec 2018
+📊 **MBA in Data Engineering**
+**FIAP** | *August 2024 – August 2025*
 
-**Nanodegree Course. Data Scientist**
-    <font color='blue'>Udacity</font>
-    > Period: May 2020 – Set 2020
+💰 **Postgraduate in Financial Management**
+**Fundação Getúlio Vargas (FGV)** | *January 2020 – December 2020*
 
-**Student Exchange Program.Communication, Design Innovation**
-    <font color='blue'>California State University (CSUN)</font>
-    > Period: Ago 2017 – Ago 2017
+🌐 **Bachelor's in Network and Telecommunications Engineering**
+**University of Brasília (UnB)** | *January 2025 – December 2030*
 
+💼 **Bachelor's in Business Administration**
+**University of Brasília (UnB)** | *January 2014 – December 2018*
+
+🔬 **Nanodegree in Data Science**
+**Udacity** | *May 2020 – September 2020*
+
+✈️ **Student Exchange Program - Communication & Design Innovation**
+**California State University (CSUN)** | *August 2017*
 
 
 ---
