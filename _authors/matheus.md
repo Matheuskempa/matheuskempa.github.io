@@ -132,17 +132,23 @@ image: daily_work.jpg
     <font color='blue'>Fundação Getúlio Vargas (FGV)</font>
     > Period: Jan 2020 – Dec 2020
 
-**Nanodegree Course. Data Scientist**
-    <font color='blue'>Udacity</font>
-    > Period: May 2020 – Set 2020
+**BA. Network and Telecommunications Engineering**
+    <font color='blue'>University of Brasília (UnB)</font>
+    > Period: Jan 2025 – Dec 2030
 
 **BA. Business Administration**
     <font color='blue'>University of Brasília (UnB)</font>
     > Period: Jan 2014 – Dec 2018
 
+**Nanodegree Course. Data Scientist**
+    <font color='blue'>Udacity</font>
+    > Period: May 2020 – Set 2020
+
 **Student Exchange Program.Communication, Design Innovation**
     <font color='blue'>California State University (CSUN)</font>
     > Period: Ago 2017 – Ago 2017
+
+
 
 ---
 
